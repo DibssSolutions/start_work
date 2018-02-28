@@ -1,0 +1,171 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% set menu = [
+	{
+		class: "link", 
+		title: "Home", 
+		href: "#", 
+		dataName: "Name"
+	},
+	{
+		list: [
+			{
+				a: 1,
+				b: 2
+			},
+			{
+				a: 3,
+				b: 2
+			}
+		], 
+		title: "Services", 
+		href: "#"
+	},
+	{
+		class: "link_item", 
+		title: "Contact", 
+		href: "#", 
+		dataName: "Name"
+	},
+	{ 
+		title: "Work", 
+		href: "#", 
+		dataName: "Name"
+	}
+] %}
+
+{% macro link(obj) %}
+	<a href="{{ obj.href }}" {% if obj.attr %} data-neme="{{ obj.attr }}"{% endif %}>{{ obj.text }}</a>
+{% endmacro %}
+
+{% macro arr(menu, activeItem) %}
+{% for item in menu %}
+<li 
+{% if loop.index === activeItem %}class="is-active"{% endif %}
+{% if item.id %} id="{{ item.id }}" {% endif %}>
+	<a href="{{ item.href }}" >{{ item.title }}</a>
+	{% if item.list %}
+	<ul>
+		{% for add in item.list %}
+		<li>
+			<span>{{ add.a }}</span>
+			<span>{{ add.b }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</li>
+{% endfor %}
+{% endmacro %}
+		
+
+    <ul>
+    	{% for item in menu %}
+      <li class="menu-list__item">
+      {{ link(
+      	{
+      		href: item.href, 
+      	  attr: item.dataName, 
+      	  text: item.title
+      	}
+      	)}}
+      {{ item.title }}
+    </li>
+      {% endfor %}
+    </ul>
+    <ul>{{ arr(menu, 2) }}</ul>
+
+
+
+
+{% set form = [
+	{
+		class: 'form-input',
+		type: 'text',
+		name: 'firstName',
+		value: '',
+		placeholder: 'First Name...'
+	},
+	{
+		class: 'form-input',
+		type: 'text',
+		name: 'secondName',
+		value: '',
+		placeholder: 'Second Name...'
+	},
+	{
+		class: 'form-input',
+		type: 'password',
+		name: 'userPassword',
+		value: '',
+		placeholder: 'Password...'
+	},
+	{
+		class: 'form-input',
+		type: 'password',
+		name: 'сonfirmPassword',
+		value: '',
+		placeholder: 'Confirm Password'
+	},
+	{
+		class: 'form-submit',
+		type: 'submit',
+		name: 'button',
+		value: 'Send',
+		id: [
+			{
+				ar: 'submitSend',
+				at: 'attribut'
+			},
+			{
+				ar: 'submitSend',
+				at: 'attribut'
+			}
+		]
+	}
+	] %}
+
+{% macro input(form) %}
+<input 
+class="{{ form.class }}" 
+type="{{ form.type }}" 
+name="{{ form.name }}" 
+value="{{ form.value }}" 
+{% if form.placeholder %} 
+	placeholder="{{ form.placeholder }}" 
+{% endif %}>
+	{% if form.id %}
+	<ul>
+			{% for itom in form.id %}
+			<li>
+				<span>{{ itom.ar }}</span>
+				<span>{{ itom.at }}</span>
+			</li>
+			{% endfor %}
+	</ul>
+	{% endif %}
+{% endmacro %}
+
+
+	<form action="">
+		{% for item in form %}
+		{{ input(
+			{
+				class: item.class,
+				type: item.type,
+				name: item.name,
+				value: item.value,
+				placeholder: item.placeholder,
+				id: item.id
+			}
+		) }}	
+		{% endfor %}
+
+	</form>
+
+{% endblock %}

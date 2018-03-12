@@ -1,0 +1,10 @@
+<svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        plan-icon/hogar/SM
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FE7449" d="M23 8h15v16H23z"/>
+        <path fill="#FE9541" d="M0 11h13v13H0z"/>
+        <path fill="#FFD845" style="mix-blend-mode:multiply" d="M6 0h24v24H6z"/>
+    </g>
+</svg>

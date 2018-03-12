@@ -1,0 +1,38 @@
+<svg width="76" height="71" viewBox="0 0 76 71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        calendar
+    </title>
+    <defs>
+        <path d="M4.5 4.508h59.163a4.5 4.5 0 0 1 4.5 4.5v9.025H0V9.008a4.5 4.5 0 0 1 4.5-4.5z" id="b"/>
+        <filter x="-1%" y="-5.2%" width="102.1%" height="110.4%" filterUnits="objectBoundingBox" id="a">
+            <feOffset dy="-1.4" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0.0588235294 0 0 0 0 0.11372549 0 0 0 0 0.168627451 0 0 0 1 0" in="shadowInnerInner1"/>
+        </filter>
+    </defs>
+    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="30.17" cy="28.176" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="40.227" cy="28.176" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="50.284" cy="28.176" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="60.341" cy="28.176" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="10.057" cy="38.32" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="20.114" cy="38.32" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="30.17" cy="38.32" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="40.227" cy="38.32" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="10.057" cy="48.463" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="20.114" cy="48.463" rx="2.235" ry="2.254"/>
+        <ellipse stroke="#0F1D2B" stroke-width="1.4" fill="#D8D8D8" cx="30.17" cy="48.463" rx="2.235" ry="2.254"/>
+        <use filter="url(#a)" xlink:href="#b" fill="#000"/>
+        <path d="M56.394 4.508h6.182c3.085 0 5.587 2.523 5.587 5.635v26.433m-27.75 22.03H5.586C2.501 58.607 0 56.085 0 52.972V10.143c0-3.112 2.501-5.635 5.587-5.635h6.04m10.272 0h7.045m9.699 0h7.665" stroke="#0F1D2B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="translate(42.462 36.193)">
+            <path d="M9.787 2.605l6.702 12.861 13.858-5.118c-1.78-3.146-3.182-5.205-4.205-6.175-1.567-1.488-3.627-2.073-4.83-2.503-1.654-.59-4.693-1.284-7.69-.601-.878.2-2.157.712-3.835 1.536z" fill="#FE4A49"/>
+            <ellipse stroke="#0F1D2B" stroke-width="1.4" cx="15.644" cy="16.779" rx="15.644" ry="15.779"/>
+            <path stroke="#0F1D2B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M9.98 7.064l5.53 10.478 9.053-3.53"/>
+        </g>
+        <g stroke="#0F1D2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+            <path d="M16.761 0v9.016"/>
+            <path d="M33.523 0v9.016"/>
+            <path d="M51.402 0v9.016"/>
+        </g>
+    </g>
+</svg>

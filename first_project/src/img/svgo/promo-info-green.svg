@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="312px" height="64px" viewBox="0 0 312 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-6.05969116%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#26A486" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#143D45" offset="100%"></stop>
+        </linearGradient>
+        <path d="M11.1073865,2 C11.1073865,2 7.40492432,23.0200662 0,65.0601986 L297.256363,49.1948132 L312,12.7882023 C111.404924,5.59606743 11.1073865,2 11.1073865,2 Z" id="path-2"></path>
+    </defs>
+    <g id="001---MC---Home---No-Clientes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-156.000000, -235.000000)">
+        <g id="Hero-Image---Promos---Más-programación---Soluciones---Aliviar-ATC---MC-GO-LIVE">
+            <g id="slideshow-home/Desktop" transform="translate(0.000000, 110.000000)">
+                <g id="text" transform="translate(135.000000, 60.000000)">
+                    <g id="Group-23">
+                        <g id="Group-24" transform="translate(21.000000, 63.000000)">
+                            <g id="Path-2" transform="translate(156.000000, 33.530099) scale(1, -1) translate(-156.000000, -33.530099) ">
+                                <use fill="#143D45" xlink:href="#path-2"></use>
+                                <use fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

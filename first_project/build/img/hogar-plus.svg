@@ -1,0 +1,10 @@
+<svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        plan-icon/hogarplus/SM
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <rect fill="#FE7449" x="23" y="8" width="15" height="16" rx="7.5"/>
+        <rect fill="#FE9541" y="11" width="13" height="13" rx="6.5"/>
+        <rect fill="#FFD845" style="mix-blend-mode:multiply" x="6" width="24" height="24" rx="12"/>
+    </g>
+</svg>

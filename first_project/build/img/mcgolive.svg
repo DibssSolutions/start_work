@@ -1,0 +1,22 @@
+<svg width="128" height="66" viewBox="0 0 128 66" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Illustration-icon/mcgolive
+    </title>
+    <defs>
+        <rect id="a" x="78" y="30" width="50" height="36" rx="6"/>
+        <rect id="b" y="29" width="22" height="37" rx="3"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <rect stroke="#0F1D2B" stroke-width="1.4" x="8.7" y=".7" width="84.6" height="59.6" rx="6"/>
+            <path d="M35.603 65h33.794" stroke="#0F1D2B" stroke-width="1.4" stroke-linecap="square"/>
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect stroke="#0F1D2B" stroke-width="1.4" x="78.7" y="30.7" width="48.6" height="34.6" rx="6"/>
+            <use fill="#F1F1F1" xlink:href="#b"/>
+            <rect stroke="#0F1D2B" stroke-width="1.4" x=".7" y="29.7" width="20.6" height="35.6" rx="3"/>
+            <circle fill="#0F1D2B" cx="121" cy="49" r="1"/>
+            <circle fill="#0F1D2B" cx="11" cy="61" r="1"/>
+        </g>
+        <path d="M62.771 26.817L47.44 16.784A4.822 4.822 0 0 0 44.806 16a4.741 4.741 0 0 0-4.042 2.24c-.51.78-.764 1.716-.764 2.702v20.12C40 43.763 42.14 46 44.84 46c.917 0 1.834-.26 2.598-.78l15.333-10.084c2.24-1.456 2.903-4.523 1.477-6.812a5.12 5.12 0 0 0-1.477-1.507" fill="#FE4A49"/>
+    </g>
+</svg>

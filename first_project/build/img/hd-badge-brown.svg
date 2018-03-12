@@ -1,0 +1,16 @@
+<svg width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        HD-badge
+    </title>
+    <defs>
+        <linearGradient x1="100%" y1="-6.14%" x2="-55.132%" y2="157.75%" id="b">
+            <stop stop-color="#FFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-opacity=".5" offset="100%"/>
+        </linearGradient>
+        <path d="M2 1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm0-1h18a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm2.064 12H5.34V8.81h3.476V12h1.276V4.872H8.816v2.849H5.34V4.872H4.064V12zm8.9-1.1V5.972h1.463c.748 0 1.353.231 1.814.693.462.462.694 1.052.694 1.771 0 .719-.232 1.309-.694 1.771-.461.462-1.066.693-1.814.693h-1.463zM11.687 12h2.795c1.129 0 2.042-.343 2.739-1.028.696-.686 1.044-1.531 1.044-2.536 0-1.005-.348-1.85-1.044-2.535-.697-.686-1.61-1.029-2.74-1.029h-2.793V12z" id="a"/>
+    </defs>
+    <g fill-rule="evenodd" transform="translate(0 .6)" fill="none">
+        <use fill="#F5A623" xlink:href="#a"/>
+        <use fill="url(#b)" xlink:href="#a"/>
+    </g>
+</svg>

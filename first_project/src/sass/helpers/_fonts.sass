@@ -1,0 +1,119 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"),
+	url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+//START Arboria-Black
+@font-face
+	+fontdefault(normal, 800, 'Arboria')
+	+fontpath('Arboria-Black', 'Arboria-Black', 'Arboria-Black')
+
+@font-face
+	+fontdefault(italic, 800, 'Arboria')
+	+fontpath('Arboria-BlackItalic', 'Arboria-BlackItalic', 'Arboria-BlackItalic')
+
+//START Arboria-Bold
+@font-face
+	+fontdefault(normal, 700, 'Arboria')
+	+fontpath('Arboria-Bold', 'Arboria-Bold', 'Arboria-Bold')
+
+@font-face
+	+fontdefault(italic, 700, 'Arboria')
+	+fontpath('Arboria-BoldItalic', 'Arboria-BoldItalic', 'Arboria-BoldItalic')
+
+//START Arboria-Book		
+@font-face
+	+fontdefault(normal, 300, 'Arboria')
+	+fontpath('Arboria-Book', 'Arboria-Book', 'Arboria-Book')
+
+@font-face
+	+fontdefault(italic, 300, 'Arboria')
+	+fontpath('Arboria-BookItalic', 'Arboria-BookItalic', 'Arboria-BookItalic')	
+
+//START Arboria-Light
+@font-face
+	+fontdefault(normal, 200, 'Arboria')
+	+fontpath('Arboria-Light', 'Arboria-Light', 'Arboria-Light')
+
+@font-face
+	+fontdefault(italic, 200, 'Arboria')
+	+fontpath('Arboria-LightItalic', 'Arboria-LightItalic', 'Arboria-LightItalic')
+
+//START Arboria-Medium
+@font-face
+	+fontdefault(normal, 500, 'Arboria')
+	+fontpath('Arboria-Medium', 'Arboria-Medium', 'Arboria-Medium')
+
+@font-face
+	+fontdefault(italic, 500, 'Arboria')
+	+fontpath('Arboria-MediumItalic', 'Arboria-MediumItalic', 'Arboria-MediumItalic')		
+
+//START Arboria-Thin
+@font-face
+	+fontdefault(normal, 100, 'Arboria')
+	+fontpath('Arboria-Thin', 'Arboria-Thin', 'Arboria-Thin')
+
+@font-face
+	+fontdefault(italic, 100, 'Arboria')
+	+fontpath('Arboria-ThinItalic', 'Arboria-ThinItalic', 'Arboria-ThinItalic')
+
+//START SourceSansPro-Black
+@font-face
+	+fontdefault(normal, 800, 'SourceSansPro')
+	+fontpath('SourceSansPro-Black', 'SourceSansPro-Black', 'SourceSansPro-Black')
+
+@font-face
+	+fontdefault(italic, 800, 'SourceSansPro')
+	+fontpath('SourceSansPro-BlackItalic', 'SourceSansPro-BlackItalic', 'SourceSansPro-BlackItalic')
+
+
+//START SourceSansPro-Bold
+@font-face
+	+fontdefault(normal, 700, 'SourceSansPro')
+	+fontpath('SourceSansPro-Bold', 'SourceSansPro-Bold', 'SourceSansPro-Bold')
+
+@font-face
+	+fontdefault(italic, 700, 'SourceSansPro')
+	+fontpath('SourceSansPro-BoldItalic', 'SourceSansPro-BoldItalic', 'SourceSansPro-BoldItalic')
+
+//START SourceSansPro-ExtraLight
+@font-face
+	+fontdefault(normal, 100, 'SourceSansPro')
+	+fontpath('SourceSansPro-ExtraLight', 'SourceSansPro-ExtraLight', 'SourceSansPro-ExtraLight')
+
+@font-face
+	+fontdefault(italic, 100, 'SourceSansPro')
+	+fontpath('SourceSansPro-ExtraLightItalic', 'SourceSansPro-ExtraLightItalic', 'SourceSansPro-ExtraLightItalic')
+
+//START SourceSansPro-Italic
+@font-face
+	+fontdefault(italic, 400, 'SourceSansPro')
+	+fontpath('SourceSansPro-Italic', 'SourceSansPro-Italic', 'SourceSansPro-Italic')
+
+//START SourceSansPro-Light
+@font-face
+	+fontdefault(normal, 200, 'SourceSansPro')
+	+fontpath('SourceSansPro-Light', 'SourceSansPro-Light', 'SourceSansPro-Light')
+
+@font-face
+	+fontdefault(italic, 200, 'SourceSansPro')
+	+fontpath('SourceSansPro-LightItalic', 'SourceSansPro-LightItalic', 'SourceSansPro-LightItalic')
+
+//START SourceSansPro-Regular
+@font-face
+	+fontdefault(normal, 400, 'SourceSansPro')
+	+fontpath('SourceSansPro-Regular', 'SourceSansPro-Regular', 'SourceSansPro-Regular')
+
+//START SourceSansPro-SemiBold
+@font-face
+	+fontdefault(normal, 600, 'SourceSansPro')
+	+fontpath('SourceSansPro-SemiBold', 'SourceSansPro-SemiBold', 'SourceSansPro-SemiBold')
+
+@font-face
+	+fontdefault(normal, 600, 'SourceSansPro')
+	+fontpath('SourceSansPro-SemiBoldItalic', 'SourceSansPro-SemiBoldItalic', 'SourceSansPro-SemiBoldItalic')		
+

@@ -1,17 +1,22 @@
 .buttwidth
+	position: relative
+	top: 0
 	width: 100%
-	height: 65px
+	height: 70px
 	background: #f7f9fa
 	margin-bottom: 157px
 
 .button__slider
+	position: absolute
+	top: 0
+	height: 100%
 	margin: 0 auto
 	max-width: 789px!important
 	text-align: center
 	z-index: 10
 	transform: none !important
 
-.slid-dots
+.slick-dots
 	width: 263px
 	padding: 20px 0
 	border-top: 4px solid #f7f9fa
@@ -23,10 +28,15 @@
 	letter-spacing: 0.4px
 	color: #828f9c
 	transition: 0.3s
-	&:hover
-		color: #0f1d2b
-		border-top: 4px solid #0a131c
-		background: rgba(10, 19, 28, 0.03)
+
+.slick-active
+	border-top: 4px solid #f7f9fa
+
+
+.slick-current	
+	color: #0f1d2b
+	border-top: 4px solid #0a131c
+	background: rgba(10, 19, 28, 0.03)
 
 .prev
 	position: absolute
@@ -35,12 +45,11 @@
 	width: 23px
 	height: 40px
 	transform: rotate(180deg)
-	z-index: 100
+	z-index: 149
 	background: url(../img/arrow-right.svg) center
 	background-repeat: no-repeat
 	background-size: cover
 	opacity: 0.2
-
 
 .next
 	position: absolute
@@ -48,7 +57,7 @@
 	top: 50%
 	width: 23px
 	height: 40px
-	z-index: 100
+	z-index: 149
 	background: url(../img/arrow-right.svg) center
 	background-repeat: no-repeat
 	background-size: cover

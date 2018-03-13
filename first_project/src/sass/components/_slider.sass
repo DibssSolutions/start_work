@@ -1,5 +1,18 @@
 .box-slider
-	height: 440px
+	position: relative
+	height: 509px
+
+.chat__virtual
+	position: absolute
+	display: inline-block
+	z-index: 101
+	transform: rotate(90deg)
+	right: -93px
+	bottom: 140px	
+
+.sliders
+	position: absolute
+	top: 0	
 
 .slider
 	height: 440px
@@ -7,7 +20,7 @@
 	background-image: url(../img/promo-1.jpg)
 	background-repeat: no-repeat
 	background-size: cover
-	z-index: 20
+	z-index: 105
 	&__banners
 		display: flex
 		align-items: center
@@ -15,6 +28,77 @@
 		width: 75%
 		height: 100%
 		margin: 0 auto
+
+.buttwidth
+	position: absolute
+	bottom: 0
+	width: 100%
+	height: 70px
+	background: #f7f9fa
+	border-right: 1px solid $color-border
+	border-left: 1px solid $color-border
+
+
+.button__slider
+	height: 70px
+	margin: 0 auto
+	max-width: 789px!important
+	text-align: center
+	z-index: 10
+	transform: none !important
+
+.slick-slide
+	border: none
+
+.slick-dots
+	width: 263px
+	padding: 19px 0 24px 
+	cursor: pointer
+	background: none
+	font-size: 16px
+	font-family: $arboria
+	font-weight: 300
+	letter-spacing: 0.4px
+	color: #828f9c
+	transition: 0.3s
+	white-space: nowrap
+	text-align: center
+
+.slick-current
+	transition: 0.1s
+	color: #0f1d2b
+	border-top: 4px solid #00081B
+	background: rgba(10, 19, 28, 0.03)
+
+
+
+
+.prev
+	position: absolute
+	left: 90px
+	top: 205px
+	width: 23px
+	height: 40px
+	z-index: 149
+	transform: rotate(180deg)
+	background: url(../img/arrow.png) center
+	background-repeat: no-repeat
+	background-size: cover
+	opacity: 0.2
+
+.next
+	position: absolute
+	right: 90px
+	top: 205px
+	width: 23px
+	height: 40px
+	z-index: 149
+	background: url(../img/arrow.png) center
+	background-repeat: no-repeat
+	background-size: cover
+	opacity: 0.2
+
+
 
 .banners__promo
 	position: relative

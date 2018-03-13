@@ -21,9 +21,6 @@
 
 	//First section
 
-	.buttwidth
-		margin-bottom: 100px
-
 	.first-section
 		padding-bottom: 0
 
@@ -42,27 +39,33 @@
 	//Second section
 	.block-hogor
 		display: block
-		width: 380px
-		margin: 0 auto
 
-	.hogor-title:nth-child(2)
-		margin-right: 0
+	.hogor-title
+		width: 70%	
+		margin: 0 auto 40px
 
-			
+	.hogor-title:last-child
+		margin: 0 auto 40px
+
+	.link-ver
+		text-align: center		
 	
 	//Third section
 	.block-promos
 		display: block
-		width: 380px
-		margin: 40px auto 0
 
 	.promos__title
-		margin-bottom: 40px
-		margin-right: 0
+		margin: 0 auto 40px
+		width: 70%
+		&:last-child
+			margin: 0 auto
 
 	.main-third-block
 		padding-bottom: 0	
-
+	
+	// .link-ver
+	// 	display: block
+	// 	margin: 0 aut
 
 	//Four section
 	.section-football
@@ -76,7 +79,11 @@
 
 	.football-foto
 		margin-top: 40px
-		text-align: center	
+		text-align: center
+
+	.linkin
+		width: 280px
+		margin: 0 auto
 
 	//Five section
 	.live-content
@@ -88,8 +95,12 @@
 		margin: 0 auto	
 
 	.content-information
+		margin: 0 auto
 		padding-right: 0
 
+	.content-logo	
+		margin: 0 auto	
+		
 	.footer__information	
 		justify-content: center
 
@@ -138,7 +149,7 @@
 	.nav-menu
 		display: none
 		position: absolute
-		top: 57%
+		top: 60px
 		right: 75px
 		min-width: 200px
 		padding: 10px 0
@@ -173,6 +184,12 @@
 	h2
 		font-size: 35px
 
+	//Slider
+	
+	.slick-dots
+		width: 33.3%
+		font-size: 12px
+
 	//First section
 	
 	.slid-dots
@@ -183,8 +200,15 @@
 	//Second section
 	
 	.hogor-title
-		min-width: 280px			
+		width: 90%
 
+	//Third section
+	.promos__title
+		width: 90%
+
+	//Four section
+	.football-content			
+		width: 90%
 	//Five section
 	.live-content
 		padding: 0 40px
@@ -214,30 +238,92 @@
 
 @media screen and (max-width: 480px)
 	
-
+	.linkin
+		width: 240px
+	
 	.contact-item
 		display: none
 
 	.toggle-menu
 			
+//Slider
+	
+	.box-slider
+		height: 440px
+
+	.slider-menu
+		display: block
+
+	.banners__promo
+		display: none
+
+	.position__chat
+		display: none
+
+	.buttwidth		
+		display: none
+		
+	.slick-current
+		border: none
+
+//First section
+	.first-section
+		padding-top: 87px
+		h2
+			padding-right: 10px	
+			padding-left: 10px			
 
 	.section-block
-		width: 100%a
+		width: 100%
+		padding-right: 10px	
+		padding-left: 10px
 
 	.section-media
 		display: block
-
+	
+//Second section
+	.second-section
+		padding-right: 10px	
+		padding-left: 10px	
 
 	.product
 		width: 100%
 		margin: 0 auto
 
 	.impreza-button
-		font-size: 14px
-		padding: 12px 20px
+		font-size: 12px
+		padding: 12px 10px
 
-	//footer
+//Third section
+	.promos__title
+		width: 100%
+
+	.hogor-title	
+		width: 100%
+		
+	.main-third-block
+		padding: 81px 10px
+
+
+//Four section
 	
+	.section-football
+		padding-right: 10px	
+		padding-left: 10px
+	
+//Five section
+	.live-content
+		padding: 0 10px
+
+	.impreza
+		padding-right: 10px	
+		padding-left: 10px	
+
+//footer
+	.block-item
+		margin-right: 0
+
 	.footer-up-block
 		align-items: center
 		flex-direction: column
+		text-align: center

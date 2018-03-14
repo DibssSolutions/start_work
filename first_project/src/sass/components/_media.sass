@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px)
+	
+	h2
+		text-align: center
+
 	// Navigation
 	
 	.nav-logo
@@ -10,14 +14,55 @@
 	.nav-menu__item
 		margin-left: 20px
 
-	//Slider
-
-	.slider-menu
+	.nav-menu
 		display: none
+
+	.toggle-menu
+		display: block
+	
+	.navigation__container
+		position: relative
+
+	.nav-menu
+		display: none
+		position: absolute
+		top: 60px
+		right: 75px
+		min-width: 200px
+		padding: 10px 0
+		z-index: 20
+		background: rgba(0,0,0,0.7)
+	
+	.nav-menu__item
+		display: block
+		position: static
+		margin-right: 20px
+		height: 40px
+		margin-left: 0
+		&:first-child
+			padding-right: 0
+			margin-left: 0
+
+	.nav-menu__link
+		display: block
+		width: 100%
+		color: #fff
+		padding: 10px 0
+		margin-bottom: 10px
+		
+	.nav-menu__item:after
+		display: none
+
+	//Header
+	.header-button
+		width: 146px	
+
+	//Slider
+	.slider-menu
+		margin-left: 15px
 
 	.arrow__slick
 		display: none	
-	
 
 	//First section
 
@@ -26,7 +71,7 @@
 
 	.section-block
 		display: block
-		width: 500px
+		width: 90%
 		margin: 0 auto
 		margin-top: 60px
 
@@ -48,7 +93,12 @@
 		margin: 0 auto 40px
 
 	.link-ver
-		text-align: center		
+		text-align: center
+
+	.second-section
+		.linkin
+			margin: 0 auto		
+			width: 245px		
 	
 	//Third section
 	.block-promos
@@ -61,29 +111,36 @@
 			margin: 0 auto
 
 	.main-third-block
-		padding-bottom: 0	
-	
-	// .link-ver
-	// 	display: block
-	// 	margin: 0 aut
+		padding-bottom: 0
+		margin-right: 0
+		.linkin
+			margin: 0 auto		
+			width: 263px
 
 	//Four section
 	.section-football
 		display: block
 		padding-right: 40px
 		padding-bottom: 100px
-		
-	.football-content
-		width: 600px
-		margin: 0 auto
 
 	.football-foto
 		margin-top: 40px
 		text-align: center
+		width: 70%
+		margin-left: 0
+		margin: 30px auto 0
+	
+	.football-content 
+		p
+			text-align: center
+			margin-right: 0
 
-	.linkin
-		width: 280px
+	.football-content
+		width: 70%
 		margin: 0 auto
+		.linkin
+			width: 207px
+			margin: 0 auto
 
 	//Five section
 	.live-content
@@ -107,6 +164,11 @@
 	.impreza-h2
 		margin-left: 0
 		text-align: center
+
+	.content-information
+		.linkin
+			margin: 0 auto
+			width: 215px	
 
 	//footer
 
@@ -137,54 +199,16 @@
 @media screen and (max-width: 767px)
 
 	//Navigation
-	.nav-menu
-		display: none
-
-	.toggle-menu
-		display: block
-	
-	.navigation__container
-		position: relative
-
-	.nav-menu
-		display: none
-		position: absolute
-		top: 60px
-		right: 75px
-		min-width: 200px
-		padding: 10px 0
-		z-index: 20
-		background: rgba(0,0,0,0.7)
-	
-	.nav-menu__item
-		display: block
-		position: static
-		margin-right: 20px
-		height: 40px
-		margin-left: 0
-		&:first-child
-			padding-right: 0
-			margin-left: 0
-
-
-	.nav-menu__link
-		display: block
-		width: 100%
-		color: #fff
-		padding: 10px 0
-		margin-bottom: 10px
-		
-		
-	.nav-menu__item:after
-		display: none
-
 	.header-button
 		display: none
 
 	h2
+		
 		font-size: 35px
 
 	//Slider
+	.slider-menu
+		display: none
 	
 	.slick-dots
 		width: 33.3%
@@ -196,7 +220,6 @@
 		width: 100%
 		min-width: 110px
 
-
 	//Second section
 	
 	.hogor-title
@@ -207,17 +230,24 @@
 		width: 90%
 
 	//Four section
-	.football-content			
-		width: 90%
+	
 	//Five section
+
 	.live-content
 		padding: 0 40px
+
+	.football-content
+		width: 100%	
 
 	.content-logo
 		margin: 0 auto 20px
 	
 	.impreza-h2
 		font-size: 35px
+
+	.football-foto
+		width: 100%
+			
 	//Footer
 	
 	.footer-up-block
@@ -231,32 +261,54 @@
 		border-right: none
 
 	.social
-		width: 70px
+		width: 82px
 		margin: 10px auto 0
 
 
 
 @media screen and (max-width: 480px)
-	
+
 	.linkin
-		width: 240px
 		font-size: 14px
 	
+	.header-contact
+		flex-direction: column
+
+	.contact-phone
+		margin-left: 0	
+
 	.contact-item
-		display: none
+		margin-right: 0
+
+	.contact-item__link:first-child
+		margin-left: 0	
 
 	.toggle-menu
 			
 	//Slider
 	
+	.slider__banners
+		width: 100%
+
+	.promo-imgfirst
+		font-size: 25px
+
+	.promo-imgthird
+		width: 30%
+
+	.promo-imgsecond
+		width: 300px
+		left: 10px	
+
+	.list-info
+		left: 10%
+
 	.box-slider
 		height: 440px
 
-	.slider-menu
-		display: block
-
 	.banners__promo
-		display: none
+		width: 95%
+		margin: 0 auto
 
 	.position__chat
 		display: none
@@ -268,6 +320,7 @@
 		border: none
 
 	//First section
+
 	.first-section
 		padding-top: 87px
 		h2
@@ -276,13 +329,13 @@
 
 	.section-block
 		width: 100%
-		padding-right: 10px	
-		padding-left: 10px
+		padding: 0
 
 	.section-media
 		display: block
 	
 	//Second section
+
 	.second-section
 		padding-right: 10px	
 		padding-left: 10px	
@@ -296,6 +349,7 @@
 		padding: 12px 10px
 
 	//Third section
+
 	.promos__title
 		width: 100%
 
@@ -305,7 +359,6 @@
 	.main-third-block
 		padding: 81px 10px 0
 
-
 	//Four section
 	
 	.section-football
@@ -313,14 +366,20 @@
 		padding-left: 10px
 	
 	//Five section
+
+	.stor_shop
+		img:last-child
+			padding-right: 0	
+
 	.live-content
 		padding: 0 10px
 
 	.impreza
 		padding-right: 10px	
-		padding-left: 10px	
+		padding-left: 10px
 
 	//footer
+
 	.block-item
 		margin-right: 0
 
@@ -328,3 +387,22 @@
 		align-items: center
 		flex-direction: column
 		text-align: center
+
+
+@media screen and (max-width: 321px)
+
+	//slider
+	.promo-imgfirst
+		width: 90%
+		height: auto
+		font-size: 22px
+		margin-left: 10px
+
+	.promo-imgthird
+		width: 30%
+
+	.promo-imgsecond
+		width: 90%
+
+	.banners__promo
+		width: 100%	

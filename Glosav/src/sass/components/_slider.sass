@@ -1,0 +1,577 @@
+.slider__video__wrap
+	position: relative
+	width: 100%
+	height: 81.5%
+	display: none
+	z-index: 6
+	position: fixed  //чтoбы oкнo былo в видимoй зoне в любoм месте 
+	top: 116px  //oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт 
+	left: 0  //пoлoвинa экрaнa слевa 
+	margin-top: -242px 
+	margin-left: 0px  //тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) 
+	display: none  //в oбычнoм сoстoянии oкнa не дoлжнo быть 
+	opacity: 0  //пoлнoстью прoзрaчнo для aнимирoвaния 
+	padding-top: 18px
+	background-color: #dce4ea
+
+.slider__video
+	width: 80%
+	height: 100%
+	margin: 0 auto
+	iframe
+		width: 100%
+		height: 100%
+		background-size: cover
+
+.slider__video__close
+	position: absolute 
+	top: 15px 
+	right: 50px 
+	cursor: pointer 
+	display: block
+	width: 48px
+	height: 48px
+	border-radius: 50%
+	background-color: $orange
+	transition: background-color 0.3s
+	&:hover
+		background-color: $blue
+
+
+.icon-close
+	display: block
+	width: 20px
+	height: 20px
+	margin: 28%
+	text-align: center
+	fill: #fff
+
+
+.slider__button
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 300px
+	height: 40px
+	margin: 0 auto
+
+.slider__button__left
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.button__hr
+	display: inline-block
+	content: ''
+	height: 0
+	width: 69px
+	border-top: 1px dotted $blue
+
+.button__block1
+	position: relative
+	height: 38px
+	width: 38px
+	margin-left: 10px
+	border-radius: 50%
+	border: 1px solid $blue
+	background-color: $clor_bg
+	cursor: pointer
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		width: 3px
+		height: 3px
+		background-color: $blue
+		border-radius: 50%
+		top: 47%
+		left: 47%
+		z-index: 2
+
+.slider__button__right
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.button__block2
+	position: relative
+	height: 20px
+	width: 20px
+	margin-right: 10px
+	border-radius: 50%
+	border: 1px solid $blue
+	background-color: $clor_bg
+	cursor: pointer
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		width: 3px
+		height: 3px
+		background-color: $blue
+		border-radius: 50%
+		top: 45%
+		left: 45%
+		z-index: 2
+
+
+.button__inform
+	font-size: 12px
+	color: $blue
+
+//Start popup slider click
+.slider__popup__click
+	position: relative
+	position: fixed
+	display: none
+	width: 100%
+	height: 82%
+	top: 44.5%
+	left: 0
+	margin-top: -208px
+	z-index: 4
+	background: rgba(220, 228, 234, 0.8)
+	opacity: 0
+	// background: linear-gradient(to bottom, #cad7de, #eaeff2)
+
+.slider__popup__content
+	position: relative
+	margin: 0
+	width: 890px
+	height: 516px
+	top: 50%
+	left: 50%
+	margin-right: -50%
+	transform: translate(-50%, -50%)
+	&::after
+		display: block
+		position: absolute
+		content: ''
+		width: 50px
+		height: 260px
+		margin: 0
+		top: 50%
+		left: 73%
+		margin-right: -50%
+		transform: translate(-50%, -50%)
+		background-image: url(../img/ellipse_right.png)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		z-index: 4
+	&::before
+		display: block
+		position: absolute
+		content: ''
+		width: 50px
+		height: 260px
+		margin: 0
+		top: 50%
+		left: 26%
+		margin-right: -50%
+		transform: translate(-50%, -50%)
+		background-image: url(../img/ellipse_left.png)
+		background-repeat: no-repeat
+		background-position: center
+		z-index: 4	
+
+.slider__popup__close
+	position: absolute 
+	top: 85px 
+	right: 36% 
+	cursor: pointer 
+	display: block
+	width: 55px
+	height: 55px
+	border-radius: 50%
+	background-color: $orange
+	transition: background-color 0.3s
+	z-index: 3
+	&:hover
+		background-color: $blue
+
+.icon-close
+	display: block
+	width: 18px
+	height: 18px
+	margin: 34%
+	text-align: center
+	fill: #fff			
+
+.slider__border__image
+	position: absolute
+	width: 390px
+	height: 430px
+	margin: 0
+	top: 50%
+	left: 52%
+	margin-right: -50%
+	transform: translate(-50%, -50%)
+	img
+		width: 100%
+		height: 100%
+		background-size: cover
+		background-repeat: no-repeat
+
+.backgr__image
+	position: absolute
+	width: 350px
+	height: 350px
+	border-radius: 50%
+	margin: 0
+	top: 50%
+	left: 50%
+	margin-right: -50%
+	transform: translate(-50%, -50%)
+	z-index: 2
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: rgba(46, 91, 114, 0.5)
+	text-align: center
+	span
+		display: block
+		width: 240px
+		margin: 70px auto 0
+		color: #fff
+		font-size: 12px
+
+.button__more__info
+	margin-top: 27px
+	padding: 3px 15px
+	background: none
+	border: 1px solid #fff
+	border-radius: 15px
+	color: #fff
+	transition: border 0.3s, color 0.3s
+	&:hover
+		border: 1px solid $blue
+		color: $blue
+
+.title__image
+	display: block
+	font-size: 16px
+	color: $blue
+	transition: color 0.3s
+	text-transform: uppercase
+	&:hover
+		.slider__border__leftup
+			border: 2px solid $orange
+
+
+.slider__block__leftup
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 160px
+	top: 0
+	left: 40px
+	&:hover
+		.slider__border__leftup
+			border: 2px solid $orange	
+		.title__image
+			color: $orange	
+	
+
+.slider__border__leftup
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px
+	&::after
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 87px
+		top: 108px
+		left: 123px
+		background-color: $blue
+		transform: rotate(25deg)
+
+.slider__block__leftcenter
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 160px
+	top: 187px
+	left: 0
+	&:hover
+		.slider__border__leftcenter
+			border: 2px solid $orange	
+		.title__image
+			color: $orange
+
+.slider__border__leftcenter
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px	
+	&::after
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 80px
+		top: 67px
+		left: 131px
+		background-color: $blue
+
+.slider__block__leftbottom
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 155px
+	left: 40px
+	bottom: 0
+	&:hover
+		.slider__border__leftbottom
+			border: 2px solid $orange	
+		.title__image
+			color: $orange
+
+.slider__border__leftbottom
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px
+	&::after
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 82px
+		bottom: 111px
+		left: 128px
+		background-color: $blue
+		transform: rotate(-25deg)
+
+.slider__block__righttop
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 160px
+	top: 0
+	right: 40px
+	&:hover
+		.slider__border__righttop
+			border: 2px solid $orange	
+		.title__image
+			color: $orange
+
+.slider__border__righttop
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px
+	&::after
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 90px
+		top: 106px
+		right: 123px
+		background-color: $blue
+		transform: rotate(-28deg)
+
+.slider__block__rightcenter
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 160px
+	top: 187px
+	right: 0
+	&:hover
+		.slider__border__rightcenter
+			border: 2px solid $orange	
+		.title__image
+			color: $orange
+
+.slider__border__rightcenter
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px
+	&::after
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 86px
+		top: 62px
+		right: 132px
+		background-color: $blue
+
+.slider__block__rightbottom
+	position: absolute
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 134px
+	height: 155px
+	right: 40px
+	bottom: 0
+	&:hover
+		.slider__border__rightbottom
+			border: 2px solid $orange	
+		.title__image
+			color: $orange
+
+.slider__border__rightbottom
+	width: 132px
+	height: 132px
+	border-radius: 50%
+	border: 2px solid $blue
+	cursor: pointer
+	transition: border 0.3s, color 0.3s
+	img
+		width: 100%
+		height: 100%
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		padding: 4px
+	&::before
+		position: absolute
+		display: block
+		content: ''
+		height: 2px
+		width: 82px
+		bottom: 110px
+		right: 128px
+		background-color: $blue
+		transform: rotate(25deg)
+
+//End popup slider click
+
+.main__slider
+	height: 480px
+
+.slide
+	display: inline-block
+	height: 480px
+	&:hover
+		.slide__direction
+			color: #ee9f32
+			cursor: pointer
+		.slide__link
+			border-color: transparent
+			&:before
+				opacity: 1
+			img
+	 			transform: scale(1.1)
+
+.slide__bg
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+	height: 100%
+	width: 100%
+	color: #396f8c
+	text-align: center
+	cursor: pointer
+	filter: blur(2px)
+	transition: color 0.3s
+	&:hover
+		filter: blur(0px)
+
+.slide__link
+	position: relative
+	max-width: 335px
+	max-height: 335px
+	border-radius: 50%
+	margin: 30px
+	border: 1px solid $blue
+	transition: border-color 0.3s, transform 0.3s
+	img
+		max-width: 100%
+		max-height: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: left top
+		padding: 10px
+		transition: transform 0.3s
+	&:before
+		position: absolute
+		display: block
+		content: ''
+		width: 112%
+		height: 120%
+		background-image: url(../img/vector-object400.png)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		transition: opacity 0.3s
+		top: -28px
+		left: 0
+		opacity: 0
+
+.slide__direction
+	display: block
+	font-size: 22px
+	width: 170px
+	margin: 15px auto 10px
+	text-transform: uppercase
+	text-align: center

@@ -1,0 +1,20 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<div class="pagewrap">
+	<!-- Start header -->
+	{% include "partials/_header.html" %}
+	<!-- End header -->
+	<main class="main">
+		<!-- Start slider -->
+		{% include "partials/_sliders.html"%}
+		<!-- End slider -->	
+	</main>
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+</div>	
+{% endblock %}

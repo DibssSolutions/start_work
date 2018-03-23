@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- Start header -->
+      <header class="header">
+        <div class="header__logo"> <a href="#" class="header__logo__link">
+			<img src="img/glosav-logo.png" alt="">
+		</a> </div>
+        <div class="header__navigation">
+          <div class="header__client">
+            <div id="header__search" class="header__search">
+              <form action=""> <input class="search__input" placeholder="Search..." type="search" value="" name="" id="search_input"> <span class="search__icon" id="search">
+						
+<svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+
+					</span> </form>
+              <div id="over_white"></div>
+            </div> <input class="header__login" id="open" type="submit" value="Войти">
+            <div id="modal__form"> <span id="modal__close">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+				</span>
+              <form class="form__box" method="POST" action="index.php" onchange="return Validate()">
+                <h2 class="modal__title"> Вход в web-систему </h2>
+                <div class="info" id="name_div"> <input type="text" class="name" name="phone" required="" placeholder="Имя"> <span id="name_error"></span> </div>
+                <div class="info" id="email_div"> <input type="text" class="email" name="email" required="" placeholder="Почта"> <span id="email_error"></span> </div>
+                <div class="info" id="password_div"> <input type="password" class="password" name="password" required="" placeholder="Пароль"> <span id="password_error"></span> </div>
+                <div class="form__buttons"> <input class="button-login" type="submit" name="" value="Войти"> </div>
+              </form>
+            </div>
+            <div id="overlay"></div> <select class="header__length" name="" id="">
+				<option value="" selected>Ru</option>
+				<option value="">Ua</option>
+				<option value="">En</option>
+			</select> </div>
+          <ul class="header__menu">
+            <li class="header__menu__item"> <a href="#" class="header__menu__link">
+					о компании
+				</a> </li>
+            <li class="header__menu__item"> <a href="#" class="header__menu__link">
+					напрвления
+				</a> </li>
+            <li class="header__menu__item"> <a href="#" class="header__menu__link">
+					продукты
+				</a> </li>
+            <li class="header__menu__item"> <a href="#" class="header__menu__link">
+					новости
+				</a> </li>
+            <li class="header__menu__item"> <a href="#" class="header__menu__link">
+					контакты
+				</a> </li>
+          </ul>
+        </div>
+        <!-- Start adaptive menu --><button class="toggle-menu">
+        <span class="toggle"></span>
+        <span class="toggle"></span>
+        <span class="toggle"></span>
+	</button>
+        <!-- End adaptive menu -->
+      </header>
+      <!-- End header -->
+      <section class="contact">
+        <div class="contact__container">
+          <div class="contact__title">
+            <h1> Контакты </h1>
+            <div class="contact__title__step"> <a href="#" class="home">
+						Главная
+					</a> <span class="dots"></span> <span class="contacts">
+						Контакты
+					</span> </div>
+            <div class="contact__adress">
+              <div class="contact__adress__map">
+                <h3> Адрес: </h3> <a href="#">
+							115114, Московская облясть, г. Москва,
+							Кожевнический проезд, д. 1
+						</a> <a href="#" class="font__color border">
+							Схема проезда
+						</a> </div>
+              <div class="contact__adress__phone">
+                <h3> Многоканальный: </h3> <a href="tel:+74956443359" class="font__color">
+							+7(495) 644 33 59
+						</a> </div>
+            </div>
+          </div>
+          <div class="contact__marketing">
+            <h2> Отдел маркетинга и PR </h2>
+            <div class="contact__pos">
+              <div class="contact__marketig__phone marg_top">
+                <h3> Телефоны: </h3> <span>
+							<a href="tel:+74956443359" class="font__color">
+								+7 (495) 644 33 59;
+							</a>
+							<br>
+							<a href="tel:+78002003359" class="font__color">
+								+7 (800) 200 33 59, доб. 2
+							</a>
+						</span> </div>
+              <div class="contact__marketig__mail marg_top">
+                <h3> E-mail: </h3> <a href="#" class="font__color border">
+							commerce@glosav.ru
+						</a> </div>
+              <div class="contact__marketig__schedule marg_top">
+                <h3> График работы </h3> <span class="font__color">
+							Пн-Пт: с 10:00 до 19:00
+						</span> </div>
+            </div>
+          </div>
+          <div class="contact__esources">
+            <h2> Отдел кадров </h2>
+            <div class="contact__pos">
+              <div class="contact__esources__phone marg_top">
+                <h3> Телефоны: </h3> <a href="tel:+78002003359" class="font__color">
+							+7 (800) 200 33 59, доб. 2
+						</a> </div>
+              <div class="contact__esources__mail marg_top">
+                <h3> E-mail: </h3> <a href="#" class="font__color border">
+							commerce@glosav.ru
+						</a> </div>
+              <div class="contact__esource__schedule marg_top">
+                <h3> График работы: </h3> <span class="font__color">
+							Пн-Пт: с 10:00 до 19:00
+						</span> </div>
+            </div>
+          </div>
+          <div class="contact__sales">
+            <h2> Отдел продаж </h2>
+            <div class="contact__pos">
+              <div class="contact__sales__phone marg_top">
+                <h3> Телефоны: </h3> <a href="tel:+74956443359" class="font__color">
+							+7 (495) 644 33 59;
+						</a> <br> <a href="tel:+78002003359" class="font__color">
+							+7 (800) 200 33 59, доб. 2;
+						</a> <br> <a href="tel:+74956443359" class="font__color">
+							+7 (495) 644 33 59;
+						</a> </div>
+              <div class="contact__sales__mail marg_top">
+                <h3> E-mail: </h3> <a href="#" class="font__color border">
+							commerce@glosav.ru
+						</a> <br> <a href="#" class="font__color border">
+							commerce_info@glosav.ru
+						</a> </div>
+              <div class="contact__sales__schadule marg_top">
+                <h3> График работы </h3> <span class="font__color">
+							Пн-Пт: с 10:00 до 19:00
+						</span> </div>
+            </div>
+          </div>
+          <div class="contact__support">
+            <h2> Техническая поддержка </h2>
+            <div class="contact__pos">
+              <div class="contact__support__phone marg_top">
+                <h3> Телефоны: </h3> <a href="tel:+78002003359" class="font__color">
+							+7 (800) 200 33 59, доб. 2
+						</a> </div>
+              <div class="contact__support__mail marg_top">
+                <h3> E-mail: </h3> <a href="#" class="font__color border">
+							support@glosav.ru
+						</a> </div>
+              <div class="contact__support__schadule marg_top">
+                <h3> График работы </h3> <span class="font__color">
+							Пн-Пт: с 10:00 до 19:00
+						</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map" id="map"> </div>
+      </section>
+      <!-- Start footer -->
+      <footer class="footer"> <a href="#">
+				<span class="footer__logo">
+					ООО "Глосав". Все права защищены
+				</span>
+			</a>
+        <div class="footer__contact"> <a href="#" class="footer__adress">
+					<span class="footer__icon">
+						
+<svg class="icon icon-map"><use xlink:href="img/sprite.svg#icon-map"></use></svg>
+
+					</span>
+						Москва, Кожевнический проезд, д.1
+				</a> <a href="#" class="footer__adress">
+					<span class="footer__icon">
+						
+<svg class="icon icon-mail"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+
+					</span>
+						commerce@glosav.ru
+				</a> <a href="#" class="footer__adress">
+					<span class="footer__icon">
+						
+<svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
+
+					</span>
+						+7 (495) 644 33 59
+				</a> </div>
+      </footer>
+      <!-- End footer -->
+    </div>
+    <!-- END content -->
+    <script>
+      function initMap()
+      {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'),
+        {
+          center:
+          {
+            lat: 55.72781503,
+            lng: 37.64749749
+          },
+          zoom: 16,
+          styles: [
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#ffffff"
+            }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+            {
+              "color": "#808080"
+            },
+            {
+              "visibility": "off"
+            }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.2
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#efefef"
+            }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.icon",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#505050"
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {},
+          {
+            "featureType": "poi",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#dadada"
+            }]
+          }]
+        });
+        addMarker(
+        {
+          lat: 55.72781503,
+          lng: 37.64749749
+        })
+
+        function addMarker(coordinates)
+        {
+          var marker = new google.maps.Marker(
+          {
+            position: coordinates,
+            map: map,
+            icon:
+            {
+              url: 'img/map.svg',
+              scaledSize: new google.maps.Size(32, 40),
+            },
+          });
+        }
+      }
+
+    </script>
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFO57vNli4qHYiwTDyJsyoFGQcEnCnog&callback=initMap" async defer></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

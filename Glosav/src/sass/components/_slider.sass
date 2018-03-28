@@ -506,11 +506,15 @@
 //End popup slider click
 
 .main__slider
-	height: 480px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	height: 440px
 
 .slide
 	display: inline-block
-	height: 480px
+	height: 440px
 	&:hover
 		.slide__direction
 			color: #ee9f32
@@ -539,8 +543,8 @@
 
 .slide__link
 	position: relative
-	max-width: 335px
-	max-height: 335px
+	max-width: 320px
+	max-height: 320px
 	border-radius: 50%
 	margin: 30px
 	border: 1px solid $blue
@@ -570,8 +574,8 @@
 
 .slide__direction
 	display: block
-	font-size: 22px
+	font-size: 20px
 	width: 170px
-	margin: 15px auto 10px
+	margin: 3px auto 10px
 	text-transform: uppercase
 	text-align: center

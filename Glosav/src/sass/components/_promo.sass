@@ -1,3 +1,216 @@
+.header__bg
+	position: relative
+	img
+		width: 100%
+		background-repeat: no-repeat
+
+.header__gradient
+	position: absolute
+	top: 0
+	width: 100%
+	height: 100%
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%)
+
 .promo
 	height: 100%
 	background-color: $color_main_bg
+
+.promo__title
+	display: flex
+	flex-direction: column
+	padding: 15px 115px
+	resize: both
+			
+.promo__title__step
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	margin-bottom: 65px
+	font-size: 13px
+
+.products
+	color: $blue
+	border-bottom: 1px solid $blue_white
+	transition: color 0.3s, border 0.2s
+	&:hover
+		color: $orange
+		border-bottom: 1px solid transparent
+
+.dots
+	display: block
+	content: ''
+	width: 3px
+	height: 3px
+	border: 50%
+	background-color: $blue_white
+	margin: 0 10px
+
+.promos
+	color: $blue_white
+
+.promo__toggle__btn
+	display: none
+
+.promo__toggle
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background: none
+	width: 27px
+	height: 20px
+	cursor: pointer
+	margin-left: 4px
+
+	.toggle-dots
+		display: block
+		content: ''
+		width: 5px
+		height: 5px
+		border-radius: 50%
+		background-color: $blue_light
+
+.promo__container
+	padding: 0 78px
+
+.promo__block__first
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 55px 0
+	.first__left
+		flex: 5 1 28%
+		img
+			width: 100%
+			border-radius: 50%
+			background-size: cover
+			background-position: center
+	.first__right
+		flex: 1 1 60%
+		margin-left: 90px
+
+
+.promo__text
+	font-size: 14px
+	color: $blue_light
+	margin-top: 25px
+
+.promo__block__second
+	display: flex
+	align-items: center
+	flex-direction: row-reverse
+	justify-content: space-between
+	padding: 55px 0
+	.second__left
+		flex: 5 1 28%
+		img
+			width: 100%
+			background-size: cover
+			background-position: center
+	.second__right
+		flex: 1 1 60%
+		margin-right: 90px
+
+.promo__block__third
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 55px 0
+	.third__left
+		flex: 5 1 28%
+		img
+			width: 100%
+			background-size: cover
+			background-position: center
+	.third__right
+		flex: 1 1 60%
+		margin-left: 90px
+
+.promo__video
+	position: relative
+	.image-bg
+		width: 100%
+		cursor: pointer
+	&:hover
+		.icon-play
+			opacity: 0.7
+
+.promo__video__popup
+	display: none
+	position: fixed
+	height: 500px
+	width: 100%
+	margin-top: -242px
+	top: 0
+	left: 0
+	z-index: 10
+	// transform: translate(-50% -50%)
+
+.promo__close__bg
+	z-index: 5  //пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa 
+	position: fixed  //всегдa перекрывaет весь сaйт 
+	background-color: rgba(46, 91, 114, 0.5)  //чернaя 
+	opacity: 0.8  //нo немнoгo прoзрaчнa 
+	-moz-opacity: 0.8  //фикс прозрачности для старых браузеров 
+	filter: alpha(opacity=80) 
+	width: 100%  
+	height: 100%  //рaзмерoм вo весь экрaн 
+	top: 0  //сверху и слевa 0, oбязaтельные свoйствa! 
+	left: 0 
+	cursor: pointer 
+	display: none  //в oбычнoм сoстoянии её нет)
+
+.icon-play
+	display: block
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 90px
+	height: 90px
+	bprder-radius: 50%
+	z-index: 2
+	cursor: pointer
+
+.promo__block__four
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 55px 0
+	.four__left
+		flex: 5 1 28%
+		img
+			width: 100%
+			background-size: cover
+			background-position: center
+	.four__right
+		flex: 1 1 60%
+		margin-left: 90px
+		.button__more__info
+			margin-top: 27px
+			padding: 3px 15px
+			background: none
+			border: 1px solid $blue
+			border-radius: 15px
+			color: $blue
+			transition: background 0.3s, border 0.3s, color 0.3s
+			&:hover
+				border: 1px solid $blue
+				background: $blue
+				color: #fff
+
+
+.promo__block__five
+	display: flex
+	align-items: center
+	flex-direction: row-reverse
+	justify-content: space-between
+	padding: 55px 0
+	.five__left
+		flex: 5 1 28%
+		img
+			width: 100%
+			background-size: cover
+			background-position: center
+	.five__right
+		flex: 1 1 60%
+		margin-right: 90px	

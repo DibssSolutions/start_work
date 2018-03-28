@@ -36,18 +36,23 @@
 .contact__title
 	display: flex
 	flex-direction: column
-	padding: 35px 115px
+	padding: 15px 115px
 			
 .contact__title__step
 	display: flex
 	align-items: center
 	justify-content: flex-start
-	margin-bottom: 65px
+	margin-bottom: 45px
 	font-size: 13px
 
 .home
 	color: $blue
 	border-bottom: 1px solid $blue_white
+	transition: color 0.3s, border 0.2s
+	&:hover
+		color: $orange
+		border-bottom: 1px solid transparent
+
 
 .dots
 	display: block
@@ -60,6 +65,31 @@
 
 .contacts
 	color: $blue_white
+
+.contact__toggle__btn
+	display: none
+
+.contact__toggle
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background: none
+	width: 27px
+	height: 20px
+	cursor: pointer
+	margin-left: 4px
+
+	.toggle-dots
+		display: block
+		content: ''
+		width: 5px
+		height: 5px
+		border-radius: 50%
+		background-color: $blue_light
+
+.contact__adress
+	margin-top: 20px
+
 
 .contact__adress__map
 	display: flex

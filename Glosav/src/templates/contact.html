@@ -5,15 +5,17 @@ title: contact
 
 {% block content %}
 	
-	<!-- Start header -->
-	{% include "partials/_header.html" %}
-	<!-- End header -->
+	<div class="header__color__bg">
+    <!-- Start header -->
+    {% include "partials/_header.html" %}
+    <!-- End header -->
+  </div>
 	<section class="contact">
 		<div class="contact__container">
 			<div class="contact__title">
-				<h1>
+				<h5>
 					Контакты
-				</h1>
+				</h5>
 				<div class="contact__title__step">
 					<a href="#" class="home">
 						Главная
@@ -23,6 +25,13 @@ title: contact
 						Контакты
 					</span>
 				</div>
+        <div class="contact__toggle__btn">
+          <button class="contact__toggle" type="button">
+            <span class="toggle-dots"></span>
+            <span class="toggle-dots"></span>
+            <span class="toggle-dots"></span>
+          </button>
+        </div>
 				<div class="contact__adress">
 					<div class="contact__adress__map">
 						<h3>
@@ -196,6 +205,240 @@ title: contact
 	<!-- Start footer -->
 	{% include "partials/_footer.html"%}
 	<!-- End footer -->
+	    <script>
+      function initMap()
+      {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'),
+        {
+          center:
+          {
+            lat: 55.72781503,
+            lng: 37.64749749
+          },
+          zoom: 16,
+          styles: [
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#ffffff"
+            }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+            {
+              "color": "#808080"
+            },
+            {
+              "visibility": "off"
+            }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.2
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            },
+            {
+              "weight": 0.1
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "landscape",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#efefef"
+            }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.icon",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#505050"
+            }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#2e5b72"
+            }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+            {
+              "visibility": "on"
+            }]
+          },
+          {},
+          {
+            "featureType": "poi",
+            "elementType": "geometry.fill",
+            "stylers": [
+            {
+              "color": "#dadada"
+            }]
+          }]
+        });
+        addMarker(
+        {
+          lat: 55.72781503,
+          lng: 37.64749749
+        })
 
+        function addMarker(coordinates)
+        {
+          var marker = new google.maps.Marker(
+          {
+            position: coordinates,
+            map: map,
+            icon:
+            {
+              url: 'img/map.svg',
+              scaledSize: new google.maps.Size(32, 40),
+            },
+          });
+        }
+      }
+
+    </script>
+    <!-- BEGIN scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNFO57vNli4qHYiwTDyJsyoFGQcEnCnog&callback=initMap" async defer></script>
+    <!-- END scripts -->
 {% endblock %}
 	

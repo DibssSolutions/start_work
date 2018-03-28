@@ -6,4 +6,8 @@ PageList:
 - file: contact.html
   ready: 95
 - file: promo.html
-  ready: 50
+  ready: 95
+- file: news.html
+  ready: 95
+- file: news.html
+  ready: 50   

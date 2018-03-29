@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
         <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
             .cls-1{fill:#2e5b72;fill-rule:evenodd}
         </style>
     
@@ -18,7 +22,10 @@
         <style>
             .cls-1{fill:#396f8c;fill-rule:evenodd;opacity:.8}
         </style>
-    </defs><symbol id="icon-close" viewBox="0 0 20.469 20.438">
+    </defs><symbol id="icon-arrow-down" viewBox="0 0 23 13">
+    
+    <path id="Shape_3_copy_10" data-name="Shape 3 copy 10" class="cls-1" d="M760.576 1198.01l1.431 1.44-11.489 11.54-1.431-1.44zm-20.153 0l-1.431 1.44 11.489 11.54 1.431-1.44z" transform="translate(-739 -1198)"/>
+</symbol><symbol id="icon-close" viewBox="0 0 20.469 20.438">
     
     <path id="Shape_3_copy_13" data-name="Shape 3 copy 13" class="cls-1" d="M830.628 49.508l1.106-1.106 10.23 10.23-1.106 1.107zm0 18.225l1.106 1.106 10.23-10.23-1.106-1.109zm20.463-18.225l-1.107-1.108-10.229 10.23 1.106 1.107zm0 18.225l-1.107 1.106-10.229-10.23 1.106-1.107z" transform="translate(-830.625 -48.406)"/>
 </symbol><symbol id="icon-glosav-logo" viewBox="0 0 239 77">

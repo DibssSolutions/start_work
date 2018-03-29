@@ -12,26 +12,6 @@
 	&:hover
 		color: $orange
 
-.news__toggle__btn
-	display: none
-
-.news__toggle
-	display: flex
-	align-items: center
-	justify-content: space-between
-	background: none
-	width: 27px
-	height: 20px
-	cursor: pointer
-	margin-left: 4px
-
-	.toggle-dots
-		display: block
-		content: ''
-		width: 5px
-		height: 5px
-		border-radius: 50%
-		background-color: $blue_light
 
 
 .news
@@ -44,35 +24,55 @@
 .news__title
 	display: flex
 	flex-direction: column
-			
-.news__title__step
-	display: flex
-	align-items: center
-	justify-content: flex-start
-	margin-bottom: 25px
-	font-size: 12px
+	position: relative
+	margin-bottom: 20px
 
-.dots
-	display: block
-	content: ''
-	width: 3px
-	height: 3px
-	border: 50%
-	background-color: $blue_white
-	margin: 0 10px
+.bread-crams
+	.title-step
+		margin-bottom: 0
 
-.newses
-	color: $blue_white
 
-.news__menu
-	text-align: right
-	font-size: 12px
-	color: $blue_light
 
+.news__menu__dropdown
+	position: relative
+	right: 0
+	bottom: 10px
+	.news__dropdown__box
+		position: absolute
+		right: 0
+		z-index: 6
+		.dropdown-toggle
+			font-family: $gotham500
+			font-size: 13px
+			font-weight: 500
+			color: $blue
+			background: none
+			.icon-arrow-down
+				width: 10px
+				height: 6px
+				color: $blue_light
+				padding-bottom: 2px
+		.news-directions
+			background-color: $color_white_blue
+			padding: 5px 10px
+			display: none
+			.categories
+				display: block
+				font-family: $gotham500
+				font-size: 13px
+				font-weight: 500
+				color: $blue
+				background: none
+				padding-bottom: 5px
+				transition: color 0.3s
+				&:hover
+					color: $orange
+
+		
 .news__row__first
 	display: flex
 	justify-content: space-between
-	margin-top: 20px
+	margin-top: 40px
 	font-size: 12px
 	font-weight: 500
 	color: $blue

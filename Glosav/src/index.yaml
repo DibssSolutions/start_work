@@ -9,5 +9,5 @@ PageList:
   ready: 95
 - file: news.html
   ready: 95
-- file: news.html
+- file: napravlenie_spisok.html
   ready: 50   

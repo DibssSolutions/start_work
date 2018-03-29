@@ -8,31 +8,37 @@ title: Index promo
 	<div class="header__bg">
 		<img src="img/1685917037.png" alt="car">
 		<div class="header__gradient">
-
 			{% include "partials/_header.html" %}
 			<div class="promo__title">
 				<h5>
 					Промо-страница
 				</h5>
-				<div class="promo__title__step">
-					<a href="#" class="home">
-						Главная
-					</a>
-					<span class="dots"></span>
-					<a href="#" class="products">
-						Продукты и решения
-					</a>
-					<span class="dots"></span>
-					<span class="promos">
-						Промо-страница
-					</span>
-				</div>
-				<div class="promo__toggle__btn">
-					<button class="promo__toggle" type="button">
-						<span class="toggle-dots"></span>
-						<span class="toggle-dots"></span>
-						<span class="toggle-dots"></span>
-					</button>
+				<div class="bread-crams">
+  					<div class="title-step">
+			            <div class="dots-menu-close">
+			              {{mixins.icon('close')}}
+			            </div>
+			            <div class="link-menu">
+							<a href="#" class="home">
+								Главная
+							</a>
+							<span class="dots"></span>
+							<a href="#" class="home">
+								Продукты и решения
+							</a>
+							<span class="dots"></span>
+							<span class="active-link">
+								Промо-страница
+							</span>
+			            </div>
+	        		</div>
+			        <div class="toggle__block">
+			            <button class="toggle__btn" type="button">
+			              <span class="toggle-dots"></span>
+			              <span class="toggle-dots"></span>
+			              <span class="toggle-dots"></span>
+			            </button>
+			        </div>
 				</div>	
 			</div>		
 		</div>

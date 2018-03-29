@@ -42,11 +42,15 @@
                   <div class="form__buttons"> <input class="button-login" type="submit" name="" value="Войти"> </div>
                 </form>
               </div>
-              <div id="overlay"></div> <select class="header__length" name="" id="">
-				<option value="" selected>Ru</option>
-				<option value="">Ua</option>
-				<option value="">En</option>
-			</select> </div>
+              <div id="overlay"></div>
+              <div class="header__length" name="" id="">
+                <ul>
+                  <li><a href="#">Ru</a></li>
+                  <li><a href="#">Ua</a></li>
+                  <li><a href="#">En</a></li>
+                </ul>
+              </div>
+            </div>
             <ul class="header__menu">
               <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					о компании
@@ -78,18 +82,39 @@
         <div class="news__container">
           <div class="news__title">
             <h5> Новости </h5>
-            <div class="news__title__step"> <a href="#" class="home">
-					Главная
-				</a> <span class="dots"></span> <span class="newses">
-					Новости
-				</span> </div>
-            <div class="news__toggle__btn"> <button class="news__toggle" type="button">
-					<span class="toggle-dots"></span>
-					<span class="toggle-dots"></span>
-					<span class="toggle-dots"></span>
-				</button> </div>
+            <div class="bread-crams">
+              <div class="title-step">
+                <div class="dots-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                <div class="link-menu"> <a href="#" class="home">
+							Главная
+						</a> <span class="dots"></span> <span class="active-link">
+							Новости
+						</span> </div>
+              </div>
+              <div class="toggle__block"> <button class="toggle__btn" type="button">
+		              <span class="toggle-dots"></span>
+		              <span class="toggle-dots"></span>
+		              <span class="toggle-dots"></span>
+		            </button> </div>
+            </div>
           </div>
-          <div class="news__menu"> <span>Новости по всем направлениям</span> </div>
+          <div class="news__menu">
+            <div class="news__menu__dropdown">
+              <div class="news__dropdown__box"> <button class="dropdown-toggle">
+						Новости по всем направлениям 
+<svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg>
+
+					</button>
+                <div class="news-directions"> <a href="#" class="categories">
+							Мониторинг и тахография
+						</a> <a href="#" class="categories">
+							Разработка ПО
+						</a> <a href="#" class="categories">
+							Системы
+						</a> </div>
+              </div>
+            </div>
+          </div>
           <div class="news__row__first">
             <div class="news__left__block"> <img src="img/bus-international.png" alt="img-bus"> <span>
 					Компания «ГЛОСАВ» 

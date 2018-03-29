@@ -81,6 +81,9 @@
 		fill: #ee9f32
 
 .header__login
+	position: absolute
+	top: 7px
+	left: 27px
 	font-size: 14px
 	color: #56849d
 	background: inherit
@@ -88,17 +91,37 @@
 		color: #2c5b72
 
 .header__length
+	display: inline-block
+	position: absolute
+	top: 4px
+	right: 0
 	background: inherit
 	border: none
 	cursor: pointer
-	color: #56849d
 	font-size: 14px
+	appearance: none
+	width: 40px
+	a
+		padding: 5px 15px 5px 10px
+		color: #56849d
+		font-weight: 400
+		transition: color 0.3s
+		&:hover
+			color: $orange
 	&:hover
-		color: $blue
-	option
-		background: #cad7df
-		cursor: pointer
-		outline: none
+		&:after
+			border-color: $orange transparent transparent transparent
+	&:after
+		content: ''
+		width: 0
+		height: 0
+		border: 5px solid transparent
+		border-color: $blue_light transparent transparent transparent
+		position: absolute
+		top: 9px
+		right: 0
+		transition: border-color 0.3s
+
 
 .toggle-menu
 	display: none

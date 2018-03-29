@@ -1,7 +1,49 @@
 @media screen and (max-width: 1023px)
 	
+	//body
 	.pagewrap
 		width: 100%
+
+	.title-step
+		display: none
+		position: absolute
+		top: 100px
+		left: 115px
+		width: 165px
+		z-index: 3
+		.is-active &
+			display: block
+		
+		.link-menu
+			align-items: flex-start
+			flex-direction: column
+			background-color: $color_white_blue
+			margin-top: 5px
+			padding: 10px
+			.home
+				padding-bottom: 5px
+				border-bottom: none
+				&:hover
+					border-bottom: none
+			.dots
+				display: none
+		
+	.dots-menu-close
+		display: block
+
+		.icon-close
+			width: 16px
+			height: 16px
+			fill: $blue_white
+			cursor: pointer
+			z-index: 4
+			margin: 0
+
+	.toggle__block
+		display: block
+
+
+	//
 	
 	.header__navigation
 		display: none
@@ -10,11 +52,10 @@
 		display: block	
 	
 	//_contact
-	.contact__title__step
-		display: none
+	.contact__title
+		position: relative
 
-	.contact__toggle__btn
-		display: block
+		
 	
 
 	//_promo
@@ -26,11 +67,11 @@
 
 	//_news
 	
-	.news__toggle__btn
-		display: block
-
-	.news__title__step
-		display: none	
+	.news__title
+		.bread-crams
+			.title-step
+				top: 83px
+				left: 0
 
 	.news__container
 		padding: 15px 90px 0

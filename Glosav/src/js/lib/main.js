@@ -23,7 +23,7 @@ $(window).on('resize', function() {
 
 
 
-//drop-down
+//drop-down (news page)
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
   $('.dropdown-toggle').click( function(event) { // лoвим клик пo ссылки с id="open"
     $('.news-directions') 
@@ -43,37 +43,30 @@ $(document).ready(function() { // вся мaгия пoсле зaгрузки с�
 });
 
 
-//news dots
+//animate yakory (contact page)
 
-(function($) {
-  var truncate = function(el) {
-    var text = el.text(),
-      height = el.height(),
-      clone = el.clone();
+$(document).ready(function() {
+  $('.contact__adress__map').on('click','a', function(event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
 
-    clone.css({
-      position: 'absolute',
-      visibility: 'hidden',
-      height: 'auto'
-    });
-    el.after(clone);
 
-    var l = text.length - 1;
-    for (; l >= 0 && clone.height() > height; --l) {
-      clone.text(text.substring(0, l) + '...');
-    }
+//dots (news page)
 
-    el.text(clone.text());
-    clone.remove();
-  };
-
-  $.fn.truncateText = function() {
-    return this.each(function() {
-      truncate($(this));
-    });
-  };
-}(jQuery));
-
-$(function() {
-  $('.box').truncateText();
+$('.text_review').each(function() {
+  var review_full = $(this).html();
+  var review = review_full;
+  if( review.length > 70 )
+  {
+    review = review.substring(0, 70);
+    $(this).html( review + '<div class="read_more"> ... </div>' );
+  }
+  $(this).append('<div class="full_text" style="display: none;">' + review_full + '</div>');
+});
+$('.read_more').click(function() {
+  $(this).parent().html( $(this).parent().find('.full_text').html() );
 });

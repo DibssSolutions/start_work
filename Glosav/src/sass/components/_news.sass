@@ -6,7 +6,7 @@
 	background: none
 	color: $blue
 	font-family: $gotham500
-	font-weight: 500
+	font-weight: 400
 	font-size: 14px
 	transition: background 0.3s, color 0.3s
 	&:hover
@@ -19,13 +19,13 @@
 	background-color: $color_main_bg
 	&__container
 		font-size: 16px
-		padding: 15px 115px 0
+		padding: 15px 85px 0
 
 .news__title
 	display: flex
 	flex-direction: column
 	position: relative
-	margin-bottom: 20px
+	padding-bottom: 65px
 
 .bread-crams
 	.title-step
@@ -70,31 +70,36 @@
 				&:hover
 					color: $orange
 
-		
-.news__row__first
-	display: flex
-	justify-content: space-between
-	margin-top: 40px
+.text_review
+	color: $blue
 	font-size: 16px
 	font-weight: 600
-	color: $blue
-				
-	.news__left__block
+		
+.news__box
+	display: flex
+	flex-wrap: wrap
+	align-item: space-between
+	justify-content: space-between
+	padding-top: 20px	
+	.news__block__first
+		flex: 1 1 20%
+		margin: 10px
+		order: -12
 		position: relative
-		flex: 5 1 22%
 		background-color: #fff
+		// min-width: 262px
 		img
 			width: 100%
+			// height: 70%
 		span
 			display: block
 			padding: 8px 20px 40px
-				
-
-	.news__center__block
-		flex: 1 1 55%
-		margin: 0 20px
+	.news__block__second
+		flex: 1 6 48%
+		margin: 10px
 		position: relative
 		background-color: #fff
+		order: -12
 		img
 			width: 100%
 			height: 100%
@@ -104,141 +109,98 @@
 			bottom: 50px
 			left: 0
 			padding: 0 15px
-
-	.gradient
-		position: absolute
-		width: 100%
-		height: 100%
-		background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
-
-	.news__right__block
-		position: relative
-		flex: 2 1 22%
-		background: #fff
-		img
+		.gradient
+			position: absolute
 			width: 100%
-		span
-			display: block
-			padding: 8px 20px 40px
-
-.news__row__second
-	display: flex
-	justify-content: space-between
-	margin-top: 20px
-	font-size: 16px
-	font-weight: 600
-	color: $blue
-	
-	.news__block
+			height: 100%
+			background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
+	.news__block__third
+		flex: 1 1 20%
+		margin: 10px
+		order: -12
 		position: relative
-		flex: 1 1 25%
 		background-color: #fff
+		// min-width: 262px
 		img
 			width: 100%
+			// height: 70%
 		span
 			display: block
 			padding: 8px 20px 40px
-		
-		&:first-child
-			margin-right: 20px
-
-		&:nth-child(3)
-			margin: 0 20px
-			img
-				height: 100%
-			span
-				display: block
-				position: absolute
-				bottom: 25%
-				left: 0
-				padding: 0 15px
-
+	.news__block__four
+		flex: 1 1 20%
+		margin: 10px
+		order: -11
+		position: relative
+		background-color: #fff
+		// min-width: 262px
+		img
+			width: 100%
+			// height: 70%
+		span
+			display: block
+			padding: 8px 20px 40px
+	.news__block__five
+		flex: 1 1 20%
+		margin: 10px
+		order: -11
+		position: relative
+		background-color: #fff
+		// min-width: 262px
+		img
+			width: 100%
+			// height: 70%
+		span
+			display: block
+			padding: 8px 20px 40px
+	.news__block__six
+		flex: 1 1 20%
+		position: relative
+		margin: 10px
+		order: -11
+		background-color: #fff
+		// min-width: 262px
 		.gradient
 			position: absolute
 			top: 0
 			left: 0
 			width: 100%
 			height: 100%
-			background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 25%, rgba(0, 0, 0, 0.1) 65%)
-
-.news__row__third
-	display: flex
-	justify-content: space-between
-	margin-top: 20px
-	font-size: 16px
-	font-weight: 600
-	color: $blue
-
-	.news__left__block
-		flex: 5 1 50%
-		margin-right: 20px
-
-		.news__block
-			height: 100%
-			position: relative
-			background-color: #fff
-			img
-				width: 100%
-				height: 100%
-			span
-				display: block
-				position: absolute
-				bottom: 50px
-				left: 0
-				padding: 0 15px
-			&:first-child
-				display: none	
-
+			background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
+		img
+			width: 100%
+			height: 100%	
+		span
+			display: block
+			position: absolute
+			bottom: 90px
+			left: 0
+			padding: 0 15px
+	.news__block__seven
+		flex: 1 1 20%
+		margin: 10px
+		order: -11
+		position: relative
+		background-color: #fff
+		// min-width: 262px
+		img
+			width: 100%
+			// height: 70%
+		span
+			display: block
+			padding: 8px 20px 40px
+	.news__block__eight
+		margin: 10px
+		flex: 1 1 45%
+		position: relative
+		background-color: #fff
+		order: -10
+		// min-width: 262px
 		.gradient
 			position: absolute
 			width: 100%
 			height: 100%
 			background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
-
-	.news__right__block
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		flex: 1 1 50%
-		
-		.news__block
-			position: relative
-			background-color: #fff
-			width: 100%
-			height: 30%
-			img
-				min-width: 186px
-			span
-				display: block
-				padding: 10px 15px 30px
-
-		.news__block
-			display: flex
-
-.news__row__four
-	display: flex
-	justify-content: space-between
-	margin-top: 20px
-	font-size: 16px
-	font-weight: 600
-	color: $blue
-
-	.news__left__block
-		position: relative
-		flex: 3 1 22%
-		background-color: #fff
-		img
-			width: 100%
-		span
-			display: block
-			padding: 8px 20px 40px
-				
-
-	.news__center__block
-		flex: 1 1 55%
-		margin: 0 20px
-		position: relative
-		background-color: #fff
 		img
 			width: 100%
 			height: 100%
@@ -248,22 +210,151 @@
 			bottom: 50px
 			left: 0
 			padding: 0 15px
-
-	.gradient
-		position: absolute
-		width: 100%
-		height: 100%
-		background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
-
-	.news__right__block
+	.news__block__nine
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin: 10px
+		flex: 1 1 45%
+		order: -10
+		.news__block
+			display: flex
+			align-items: flex-start
+			position: relative
+			background-color: #fff
+			width: 100%
+			height: 30%
+			min-height: 120px
+			img
+				min-width: 186px
+				height: 100%
+			span
+				display: block
+				padding: 10px 15px 30px
+	.news__block__ten
+		flex: 1 1 20%
+		margin: 10px
+		order: -9
 		position: relative
-		flex: 1 1 22%
-		background: #fff
+		background-color: #fff
+		// min-width: 262px
 		img
 			width: 100%
+			// height: 70%
 		span
 			display: block
 			padding: 8px 20px 40px
+	.news__block__eleven
+		margin: 10px
+		flex: 1 5 48%
+		position: relative
+		background-color: #fff
+		order: -9
+		.gradient
+			position: absolute
+			width: 100%
+			height: 100%
+			background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
+		img
+			width: 100%
+			height: 100%
+		span
+			display: block
+			position: absolute
+			bottom: 50px
+			left: 0
+			padding: 0 15px
+	.news__block__twelve
+		flex: 1 1 20%
+		margin: 10px
+		order: -9
+		position: relative
+		background-color: #fff
+		// min-width: 262px
+		img
+			width: 100%
+			// height: 70%
+		span
+			display: block
+			padding: 8px 20px 40px
+						
+
+	
+// .news__block
+// 	display: flex
+// 	flex-direction: column
+// 	position: relative
+// 	flex: 1 1 262px
+// 	background-color: #fff
+// 	margin-right: 20px
+// 	img
+// 		width: 100%
+// 	span
+// 		display: block
+// 		padding: 8px 20px 40px
+// 	&:last-child
+// 		margin-right: 0
+// 	&:nth-child(3)
+// 		margin: 0 20px
+// 		img
+// 			height: 100%
+// 		span
+// 			display: block
+// 			position: absolute
+// 			bottom: 25%
+// 			left: 0
+// 			padding: 0 15px
+
+	// .gradient
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 0
+	// 	width: 100%
+	// 	height: 100%
+	// 	background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 25%, rgba(0, 0, 0, 0.1) 65%)
+
+	// .news__left__block
+	// 	flex: 5 1 50%
+	// 	margin-right: 20px
+
+	// 	.news__block
+	// 		height: 100%
+	// 		position: relative
+	// 		background-color: #fff
+	// 		img
+	// 			width: 100%
+	// 			height: 100%
+	// 		span
+	// 			display: block
+	// 			position: absolute
+	// 			bottom: 50px
+	// 			left: 0
+	// 			padding: 0 15px
+	// 		&:first-child
+	// 			display: none	
+
+	// 	.gradient
+	// 		position: absolute
+	// 		width: 100%
+	// 		height: 100%
+	// 		background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 20%, rgba(0, 0, 0, 0.1) 55%)
+
+	// .news__right__block
+	// 	display: flex
+	// 	flex-direction: column
+	// 	justify-content: space-between
+	// 	flex: 1 1 50%
+		
+	// 	.news__block
+	// 		position: relative
+	// 		background-color: #fff
+	// 		width: 100%
+	// 		height: 30%
+	// 		img
+	// 			min-width: 186px
+	// 		span
+	// 			display: block
+	// 			padding: 10px 15px 30px
 
 .button__loading
 	display: flex

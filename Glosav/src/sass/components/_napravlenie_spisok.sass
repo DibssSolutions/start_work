@@ -1,0 +1,81 @@
+.naprav__container
+	background-color: $color_main_bg
+	padding: 15px 115px 0
+	color: $blue_light
+	.naprav__title
+		display: flex
+		flex-direction: column
+		padding-bottom: 65px
+		.bread-crams	
+			position: relative
+			margin-top: 5px
+			.title-step
+				top: 30px
+				left: 0
+	.naprav__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		font-style: $gotham500	
+		.naprav__monitoring
+			margin: 0 65px 65px 0
+			width: 45%
+		.naprav__integration
+			margin: 0 0 65px
+			width: 45%
+		.naprav__its
+			margin: 0 65px 65px 0
+			width: 45%
+		.naprav__develop
+			margin: 0 0 65px
+			width: 45%	
+		img
+			max-width: 450px
+			max-height: 450px
+			width: 100%
+			border-radius: 50%
+			margin-bottom: 60px
+		h2
+			margin-bottom: 40px
+		p
+			font-size: 14px
+			color: $blue_light
+			line-height: 22px	
+		.param__btn__moreinfo
+			margin: 25px 0 30px	
+			padding: 3px 15px
+			background: none
+			border: 1px solid $blue
+			border-radius: 15px
+			color: $blue
+			transition: background 0.3s, border 0.3s, color 0.3s
+			&:hover
+				border: 1px solid $blue
+				background: $blue
+				color: #fff
+		.param__menu
+			.param__menu__item
+				list-style-type: none
+				position: relative
+				.param__menu__link
+					font-size: 14px
+					padding-left: 14px
+					line-height: 30px
+					font-weight: 400
+					color: $blue_light
+					transition: color 0.3s
+					font-style: $gotham500
+					&:hover
+						color: $orange
+						&::before
+							background-color: $orange
+					&::before 
+						position: absolute
+						top: 12px
+						left: 0
+						content: ''
+						width: 5px
+						height: 5px
+						background-color: $blue_light
+						border-radius: 50%
+						transition: background 0.3s

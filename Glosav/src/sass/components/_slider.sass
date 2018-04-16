@@ -1,18 +1,28 @@
-.slider__video__wrap
+.main
 	position: relative
+.main__slider__center
+	position: absolute
 	width: 100%
-	height: 79%
-	display: none
-	z-index: 6
+	height: 570px
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -45%)
+
+
+.slider__video__wrap
 	position: fixed  //чтoбы oкнo былo в видимoй зoне в любoм месте 
-	top: 116px  //oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт 
+	width: 100%
+	height: 100%
+	z-index: 6
+	top: 50%  //oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт 
 	left: 0  //пoлoвинa экрaнa слевa 
-	margin-top: -269px 
+	transform: translate(0, -50%)
 	margin-left: 0px  //тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) 
 	display: none  //в oбычнoм сoстoянии oкнa не дoлжнo быть 
-	opacity: 0  //пoлнoстью прoзрaчнo для aнимирoвaния 
 	padding-top: 18px
 	background-color: #dce4ea
+	&.video-active
+		display: block
 
 .slider__video
 	width: 80%
@@ -60,23 +70,16 @@
 	align-items: center
 	justify-content: space-between
 
-.button__hr
-	display: inline-block
-	content: ''
-	height: 0
-	width: 69px
-	border-top: 1px dotted $blue
-
-.button__block1
+.noUi-horizontal .noUi-handle
 	position: relative
-	height: 38px
 	width: 38px
-	margin-left: 10px
+	height: 38px
+	margin-top: -13px
 	border-radius: 50%
 	border: 1px solid $blue
 	background-color: $clor_bg
 	cursor: pointer
-	&:after
+	&::after
 		position: absolute
 		display: block
 		content: ''
@@ -84,9 +87,20 @@
 		height: 3px
 		background-color: $blue
 		border-radius: 50%
-		top: 47%
-		left: 47%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 		z-index: 2
+.noUi-horizontal
+    height: 1px	
+.noUi-target
+	width: 115px 
+	border: 1px dotted $blue
+.noUi-connect, .noUi-origin
+	left: 20px
+.button__block1
+	height: 2px
+	width: 80px
 
 .slider__button__right
 	display: flex
@@ -98,6 +112,7 @@
 	height: 20px
 	width: 20px
 	margin-right: 10px
+	margin-left: -20px
 	border-radius: 50%
 	border: 1px solid $blue
 	background-color: $clor_bg
@@ -110,8 +125,9 @@
 		height: 3px
 		background-color: $blue
 		border-radius: 50%
-		top: 45%
-		left: 45%
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
 		z-index: 2
 
 
@@ -125,14 +141,13 @@
 	position: fixed
 	display: none
 	width: 100%
-	height: 82%
-	top: 44.5%
-	left: 0
-	margin-top: -208px
+	height: 100%
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
 	z-index: 4
-	background: rgba(220, 228, 234, 0.8)
+	background: rgba(220, 228, 234, 0.9)
 	opacity: 0
-	// background: linear-gradient(to bottom, #cad7de, #eaeff2)
 
 .slider__popup__content
 	position: relative
@@ -141,8 +156,8 @@
 	height: 516px
 	top: 50%
 	left: 50%
-	margin-right: -50%
-	transform: translate(-50%, -50%)
+	// margin-right: -50%
+	transform: translate(-50%, -55%)
 	&::after
 		display: block
 		position: absolute
@@ -221,12 +236,10 @@
 	margin: 0
 	top: 50%
 	left: 50%
-	margin-right: -50%
 	transform: translate(-50%, -50%)
 	z-index: 2
 	background-size: cover
 	background-repeat: no-repeat
-	background-color: rgba(46, 91, 114, 0.5)
 	text-align: center
 	span
 		display: block
@@ -234,6 +247,17 @@
 		margin: 70px auto 0
 		color: #fff
 		font-size: 12px
+		z-index: 3
+	.backgr__color
+		position: absolute
+		width: 350px
+		height: 350px
+		border-radius: 50%
+		margin: 0
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: rgba(46, 91, 114, 0.7)
 
 .button__more__info
 	margin-top: 27px
@@ -243,13 +267,15 @@
 	border-radius: 15px
 	color: #fff
 	transition: border 0.3s, color 0.3s
+	z-index: 4
 	&:hover
 		border: 1px solid $blue
 		color: $blue
 
 .title__image
 	display: block
-	font-size: 16px
+	font-size: 15px
+	font-weight: 700
 	color: $blue
 	transition: color 0.3s
 	text-transform: uppercase
@@ -576,7 +602,8 @@
 
 .slide__direction
 	display: block
-	font-size: 20px
+	font-size: 18px
+	font-weight: 700
 	width: 170px
 	margin: 20px auto 10px
 	text-transform: uppercase

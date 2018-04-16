@@ -70,7 +70,8 @@
     "babel-plugin-transform-es2015-spread": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "jquery-ui": "^1.12.1",
-    "nouislider": "^11.0.3",
+    "nouislider": "^11.1.0",
+    "select2": "^4.0.6-rc.1",
     "slick-carousel": "^1.8.1"
   }
 }

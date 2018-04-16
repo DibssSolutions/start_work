@@ -1,8 +1,45 @@
 @media screen and (max-width: 767px)
 	
+
+	//body
+	h5
+		font-size: 35px
+
+	//promo
+	
+	.promo__title
+		padding: 15px 40px
+
+	.promo__block__first
+		display: block
+		.first__right
+			margin-left: 0
+			margin-top: 30px
+	.promo__block__second
+		display: block
+		.second__right
+			margin-right: 0
+			margin-top: 30px
+	.promo__block__third
+		display: block
+		.third__right
+			margin-left: 0
+			margin-top: 30px		
+	.promo__block__four
+		display: block
+		.four__right
+			margin-left: 0
+			margin-top: 30px
+	.promo__block__five
+		display: block
+		.five__right
+			margin-right: 0
+			margin-top: 30px
+
+
 	//News
-	// .news__container
-	// 	padding: 15px 15px 0
+	.news__container
+		padding: 15px 65px 0
 
 	.position
 		min-height: 370px
@@ -26,9 +63,113 @@
 		flex: 1 1 262px
 		.news__block
 			height: 90px
+			margin-bottom: 20px
 			span
 				font-size: 14px
 	.news__block__eleven
 		min-height: 370px
 		span
-			font-size: 14px		
+			font-size: 14px
+	.js-box
+		display: none
+	
+	//contact
+	.contact__title
+    	padding: 15px 25px
+	.contact__marketing
+		padding: 35px 25px
+	.contact__esources
+		padding: 35px 25px
+	.contact__sales
+		padding: 35px 25px
+	.contact__support
+		padding: 35px 25px
+
+
+	//text
+	.text__container
+		padding: 15px 25px 0
+		img
+			float: none
+			margin-left: 0
+		iframe
+			width: 100%
+		blockquote
+			p
+				padding-left: 75px
+			&:before
+				left: 20px
+	
+	//company
+	.company__container
+		padding: 15px 25px 0
+		img
+			float: none
+			margin-left: 0
+
+	//napravlenie
+	.naprav__container
+		padding: 15px 25px 0
+		.naprav__wrap
+			.naprav__monitoring
+				margin: 0 0 65px
+				width: 100%
+			.naprav__integration
+				margin: 0 0 65px
+				width: 100%
+			.naprav__its
+				margin: 0 0 65px
+				width: 100%
+			.naprav__develop
+				margin: 0 0 65px
+				width: 100%
+			img
+				margin-bottom: 30px
+					
+	//spisok productov
+	.product__wrap__title
+		padding: 35px 25px
+
+	.product
+		&__block
+			display: block
+			padding: 35px 25px
+			&__image
+				margin-bottom: 35px
+			&__content
+				padding-left: 0
+	//products
+	.products
+		padding: 20px 20px
+		.products-wrap__block
+			margin: 0 auto 90px
+			width: 420px
+			height: 420px
+			&::after
+				width: 450px
+				height: 450px
+			&::before
+				width: 420px
+				height: 420px
+	
+
+	//footer
+	
+	.footer
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		padding: 10px 25px 10px
+		a
+			display: block
+			order: 1
+		.footer__contact
+			align-items: center
+			justify-content: flex-start
+			flex-wrap: wrap-reverse
+			.footer__adress
+				margin-left: 0
+				margin-bottom: 5px
+				width: 100%
+				&:first-child
+					margin-bottom: 25px

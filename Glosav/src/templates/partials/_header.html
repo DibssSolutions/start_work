@@ -1,24 +1,26 @@
 <header class="header">
 	<div class="header__logo">
-		<a href="#" class="header__logo__link">
+		<a href="#" class="header__logo-link">
 			<img src="img/glosav-logo.png" alt="">
 		</a>
 	</div>
+	<!-- Start adaptive menu -->
+		<button class="toggle-menu">
+	        <span class="toggle"></span>
+	        <span class="toggle"></span>
+	        <span class="toggle"></span>
+		</button>
+	<!-- End adaptive menu -->
 	<div class="header__navigation">
 		<div class="header__client">
-			<div id="header__search" class="header__search">
+			<div class="header__search">
 				<form action="">
-					<input class="search__input"
-							placeholder="Search..."
-							type="search" 
-							value="" 
-							name="" 
-							id="search_input">
-					<span class="search__icon" id="search">
+					<input class="header__search-input" placeholder="Search..."
+							type="search" value="" name="">
+					<span class="header__search-icon">
 						{{mixins.icon('search')}}
 					</span>
 				</form>
-				<div id="over_white"></div>	
 			</div>
 			<input class="header__login" id="open" type="submit" value="Войти">
 			<div id="modal__form">
@@ -40,7 +42,7 @@
 							name="phone" 
 							required="" 
 							placeholder="Имя">
-						<span id="name_error"></span>
+						<span id="name_error">*Не верно введены данные. Пожалуйста проверте написание</span>
 					</div>
 					<div class="info" id="email_div">
 						<input 
@@ -49,7 +51,9 @@
 							name="email" 
 							required="" 
 							placeholder="Почта">
-						<span id="email_error"></span>
+						<span id="email_error">
+							*Не верно введены данные
+						</span>
 					</div>
 					<div class="info" id="password_div">
 						<input 
@@ -66,14 +70,15 @@
 				</form>
 			</div>
 			<div id="overlay"></div>	
-			<div class="header__length" name="" id="">
+			<div class="header__length">
+				<a class="click-link" href="#">Ru</a>
 				<ul>
 					<li><a href="#">Ru</a></li>
 					<li><a href="#">Ua</a></li>
 					<li><a href="#">En</a></li>
 				</ul>	
 			</div>
-		</div>
+		</div>	
 		<ul class="header__menu">
 			<li class="header__menu__item">
 				<a href="#" class="header__menu__link">
@@ -101,14 +106,15 @@
 				</a>
 			</li>
 		</ul>
+		<div class="header-mobile">
+			<div class="header-mobile-logo">
+				<a href="#">
+					{{mixins.icon('logo_mobile_menu')}}
+				</a>
+			</div>
+			<div class="header-mobile-menu-close">
+				{{mixins.icon('close')}}
+			</div>
+		</div>
 	</div>
-	<!-- Start adaptive menu -->
-
-	<button class="toggle-menu">
-        <span class="toggle"></span>
-        <span class="toggle"></span>
-        <span class="toggle"></span>
-	</button>
-
-	<!-- End adaptive menu -->
 </header>

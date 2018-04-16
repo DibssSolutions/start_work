@@ -1,29 +1,43 @@
-.header__bg
-	position: relative
-	img
-		width: 100%
-		background-repeat: no-repeat
-
-.header__gradient
-	position: absolute
-	top: 0
-	width: 100%
-	height: 100%
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%)
+.promo__button__moreinfo
+	display: none
+	margin-top: 27px
+	padding: 3px 15px
+	background: none
+	border: 1px solid $blue
+	border-radius: 15px
+	color: $blue
+	transition: background 0.3s, border 0.3s, color 0.3s
+	&:hover
+		border: 1px solid $blue
+		background: $blue
+		color: #fff
 
 .promo
-	height: 100%
-	background-color: $color_main_bg
+	background-color: $blue_middle
+	&__image
+		width: 100%
+		height: 0
+		padding-bottom: 40%
+		position: relative
+		background-color: $blue_middle
+		background-size: cover
+		background-repeat: no-repeat
+	&__gradient
+		position: absolute
+		top: 0
+		width: 100%
+		height: 99%
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%)
 
-.promo__title
-	display: flex
-	flex-direction: column
-	padding: 15px 115px
-	resize: both
-	position: relative
+	&__title
+		display: flex
+		flex-direction: column
+		padding: 15px 115px
+		resize: both
+		position: relative
 
-.promo__container
-	padding: 0 78px
+	&__container
+		padding: 0 78px
 
 .promo__block__first
 	display: flex
@@ -138,19 +152,6 @@
 	.four__right
 		flex: 1 1 60%
 		margin-left: 90px
-		.button__more__info
-			margin-top: 27px
-			padding: 3px 15px
-			background: none
-			border: 1px solid $blue
-			border-radius: 15px
-			color: $blue
-			transition: background 0.3s, border 0.3s, color 0.3s
-			&:hover
-				border: 1px solid $blue
-				background: $blue
-				color: #fff
-
 
 .promo__block__five
 	display: flex

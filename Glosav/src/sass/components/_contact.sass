@@ -39,11 +39,15 @@
 	flex-direction: column
 	padding: 15px 115px
 	.bread-crams
+		position: relative
 		.title-step
-			margin-bottom: 45px
-
+			margin-left: 0
+			position: absolute
+			top: 30px
+			left: 0
 .contact__adress
-	margin-top: 35px
+	margin-top: 85px
+	margin-bottom: 20px
 
 
 .contact__adress__map
@@ -92,3 +96,7 @@
 #map
 	height: 465px
 	width: 100%
+
+.gmnoprint
+	&:hover
+		color: $orange

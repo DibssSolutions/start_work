@@ -1,41 +1,75 @@
 @media screen and (max-width: 480px)
+	//autorisation
+	#modal__form
+		width: 280px  
+		height: 390px
+	//Global
+	.news__title
+		padding-left: 15px
+	
+	.title-step
+		margin-left: 15px
+	//header	
+	.header
+		padding: 0 30px
+	
 
+	//promo
+	.promo__title
+		padding: 15px 20px
+
+	.promo__container
+		padding: 0 25px	
 	//News
 	.news__container
-		padding: 15px 0 0
+		padding: 15px 15px 0
+		.news__menu
+			margin-right: 25px
 		.position
 			flex: 1 1 242px
+			min-height: 440px
 		.news__block__second
 			flex: 1 1 242px
-			img
-				height: 70%
-			span
-				position: static
-				padding-top: 8px
 		.news__block__six
-			img
-				height: 70%
-			span
-				position: static
-				padding-top: 8px			
-		.news__block__eight
 			flex: 1 1 242px
-			img
-				height: 70%
-			span
-				position: static
-				padding-top: 8px	
+			max-height: 440px			
+		.news__block__eight
+			flex: 1 1 242px	
 		.news__block__nine
 			flex: 1 1 242px
-			min-height: 430px
-			.news__block
-				img
-					display: none
 		.news__block__eleven
 			flex: 1 1 242px
-			max-height: 500px
-			img
-				height: 70%
-			span
-				position: static
-				padding-top: 8px	
+			max-height: 440px
+
+	//company
+
+	.company__container
+		.number-box
+			.block
+				width: 270px
+		iframe
+			height: 230px
+
+	//products
+	.products
+		padding: 20px 20px
+		.products-wrap__block
+			margin: 0 auto 60px
+			width: 250px
+			height: 250px
+			&::after
+				width: 280px
+				height: 280px
+			&::before
+				width: 250px
+				height: 250px
+			h2
+				font-size: 20px	
+
+	//podrobno
+	.podrobno
+		&__left-block
+			margin-right: 0
+			min-width: 260px
+		&__right-block
+			min-width: 260px			

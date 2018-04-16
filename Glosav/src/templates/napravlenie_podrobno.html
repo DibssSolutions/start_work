@@ -1,0 +1,565 @@
+---
+title: Index napravlenie_podrobno
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- Start podrobno page -->
+	<div class="podrobno">
+		<div class="podrobno__image" style="background-image: url(img/JAMBREK_1_1920.jpg);">
+			<!-- Start header -->
+			<div class="podrobno__gradient">
+				<header class="header">
+					<div class="header__logo">
+						<a href="#" class="header__logo-link">
+							<img src="img/glosav-logo.png" alt="">
+						</a>
+					</div>
+					<!-- Start adaptive menu -->
+						<button class="toggle-menu">
+					        <span class="toggle"></span>
+					        <span class="toggle"></span>
+					        <span class="toggle"></span>
+						</button>
+					<!-- End adaptive menu -->
+					<div class="header__navigation">
+						<div class="header__client">
+							<div class="header__search">
+								<form action="">
+									<input class="header__search-input" placeholder="Search..."
+											type="search" value="" name="">
+									<span class="header__search-icon">
+										{{mixins.icon('search')}}
+									</span>
+								</form>
+							</div>
+							<input class="header__login" id="open" type="submit" value="Войти">
+							<div id="modal__form">
+								<span id="modal__close">
+									{{mixins.icon('close')}}
+								</span>
+								<form 
+									class="form__box"
+									method="POST"
+									action="index.php"
+									onchange="return Validate()">
+									<h2 class="modal__title">
+										Вход в web-систему
+									</h2>
+									<div class="info" id="name_div">
+										<input 
+											type="text" 
+											class="name" 
+											name="phone" 
+											required="" 
+											placeholder="Имя">
+										<span id="name_error"></span>
+									</div>
+									<div class="info" id="email_div">
+										<input 
+											type="text" 
+											class="email" 
+											name="email" 
+											required="" 
+											placeholder="Почта">
+										<span id="email_error"></span>
+									</div>
+									<div class="info" id="password_div">
+										<input 
+											type="password" 
+											class="password" 
+											name="password" 
+											required="" 
+											placeholder="Пароль">
+										<span id="password_error"></span>
+									</div>
+									<div class="form__buttons">
+										<input class="button-login" type="submit" name="" value="Войти">
+									</div>
+								</form>
+							</div>
+							<div id="overlay"></div>	
+							<div class="header__length">
+								<a class="click-link" href="#">Ru</a>
+								<ul>
+									<li><a href="#">Ru</a></li>
+									<li><a href="#">Ua</a></li>
+									<li><a href="#">En</a></li>
+								</ul>	
+							</div>
+						</div>	
+						<ul class="header__menu">
+							<li class="header__menu__item">
+								<a href="#" class="header__menu__link">
+									о компании
+								</a>
+							</li>
+							<li class="header__menu__item">
+								<a href="#" class="header__menu__link active-menu-link">
+									напрвления
+								</a>
+							</li>
+							<li class="header__menu__item">
+								<a href="#" class="header__menu__link">
+									продукты
+								</a>
+							</li>
+							<li class="header__menu__item">
+								<a href="#" class="header__menu__link">
+									новости
+								</a>
+							</li>
+							<li class="header__menu__item">
+								<a href="#" class="header__menu__link">
+									контакты
+								</a>
+							</li>
+						</ul>
+						<div class="header-mobile">
+							<div class="header-mobile-logo">
+								<a href="#">
+									{{mixins.icon('logo_mobile_menu')}}
+								</a>
+							</div>
+							<div class="header-mobile-menu-close">
+								{{mixins.icon('close')}}
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="podrobno__title">
+					<h5>
+						Мониторинг транспорта
+					</h5>
+					<div class="bread-crams">
+	  					<div class="title-step">
+				            <div class="dots-menu-close">
+				              {{mixins.icon('close')}}
+				            </div>
+				            <div class="link-menu">
+								<a href="#" class="home">
+									Главная
+								</a>
+								<span class="dots"></span>
+								<a href="#" class="home">
+									Направления
+								</a>
+								<span class="dots"></span>
+								<span class="active-link">
+									Мониторинг транспорта
+								</span>
+				            </div>
+		        		</div>
+				        <div class="toggle__block">
+				            <button class="toggle__btn" type="button">
+				              <span class="toggle-dots"></span>
+				              <span class="toggle-dots"></span>
+				              <span class="toggle-dots"></span>
+				            </button>
+				        </div>
+					</div>	
+				</div>		
+				<!-- End header -->
+			</div>
+		</div>
+			<!-- Start main -->
+		<div class="podrobno__main">
+			<div class="podrobno__drop">
+				<div class="podrobno__content" data-drop-height='195'>
+					<div class="podrobno__text">
+						<h2>
+							Что это такое?
+						</h2>
+						<p>
+							Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку. Изо дня в день в разъездах. Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай.
+						</p>
+						<p>
+							Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку. Изо дня в день в разъездах. Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай.
+						</p>
+						<p>
+							Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку. Изо дня в день в разъездах. Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай.
+						</p>
+					</div>
+					<button class="podrobno__text-more js-drop-back" type="button">
+						<div class="podrobno__back-btn js-drop-icon">
+							<img src="img/arrow.png">
+						</div>
+					</button>
+				</div>
+			</div>	
+			<div class="podrobno__box-slider">
+				<h2>
+					Примеры внедрения
+				</h2>
+				<div class="slider-prevArrow">
+					{{mixins.icon('next-arrow')}}
+				</div>
+				<div class="slider-nextArrow">
+					{{mixins.icon('next-arrow')}}
+				</div>	
+				<div class="podrobno__slider">
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/tamozennye.png" alt="tormogenie">
+						</div>	
+						<a href="#" >
+							Перевозки для компании
+							Global Oil Trands
+						</a>
+					</div>
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/bort-computer.png" alt="bort-computer">
+						</div>
+						<a href="#" >
+							Лизинг СТО
+						</a>
+					</div>
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/video-camera.png" alt="tormogenie">
+						</div>
+						<a href="#" >
+							Безопасность для магазина обуви
+						</a>
+					</div>
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/img_collection.png" alt="img_collection">
+						</div>
+						<a href="#" >
+							Решение инкассации для Сбербанка
+						</a>
+					</div>
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/bort-computer.png" alt="bort-computer">
+						</div>
+						<a href="#" >
+							Лизинг СТО
+						</a>
+					</div>
+					<div class="slide">
+						<div class="slide-image">
+							<img src="img/video-camera.png" alt="tormogenie">
+						</div>
+						<a href="#" >
+							Безопасность для магазина обуви
+						</a>
+					</div>
+				</div>
+				<button class="podrobno__btn-lodmore" type="button">
+					Смотреть все решения
+				</button>
+			</div>
+			<div class="podrobno__popup-wrap">
+				<div class="podrobno__popup js-modal-sberbank">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('sberbank_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Sberbank Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>
+				</div>
+				<div class="podrobno__popup js-modal-huawei">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('huawei_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Huawei Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-gazprom">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('gazprom_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Gazprom Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-dell">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('dell_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Dell Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-alfabank">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('alfabank_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Alfabank Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-google">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('google_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Google Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-skb-bank">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('skb-bank_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Skb-bank Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-apple">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('apple_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Apple Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-mts">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('mts_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">MTS Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup js-modal-intel">
+					<div class="podrobno__popup-close">
+						{{mixins.icon('close')}}
+					</div>
+					<div class="podrobno__popup-brend">
+						{{mixins.icon('intel_logo')}}
+					</div>	
+					<h2 class="podrobno__title-brend">Intel Inc.</h2>
+					<span>Американская корпорация</span>
+					<div class="podrobno__popup-text">
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+						<p>
+							Производитель персональных и планшетных компьютеров, аудиоплееров, телефонов, программного обеспечения. Один из пионеров в области персональных компьютеров[9] и современных многозадачных операционных систем с графическим интерфейсом. Штаб-квартира — в Купертино, штат Калифорния.
+						</p>
+					</div>	
+				</div>
+				<div class="podrobno__popup-overlay"></div>
+			</div>
+			<div class="podrobno__brends">
+				<h2>
+					Кто уже воспользовался
+				</h2>
+				<div class="podrobno__brends-container">
+					<div class="brend">
+						<a href="#" class="js-sberbank-popup">
+							{{mixins.icon('sberbank_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-huawei-popup">
+							{{mixins.icon('huawei_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-gazprom-popup">
+							{{mixins.icon('gazprom_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-dell-popup">
+							{{mixins.icon('dell_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-alfabank-popup">
+							{{mixins.icon('alfabank_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-google-popup">
+							{{mixins.icon('google_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-skb-bank-popup">
+							{{mixins.icon('skb-bank_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-apple-popup">
+							{{mixins.icon('apple_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-mts-popup">
+							{{mixins.icon('mts_logo')}}
+						</a>	
+					</div>
+					<div class="brend">
+						<a href="#" class="js-intel-popup">
+							{{mixins.icon('intel_logo')}}
+						</a>	
+					</div>
+				</div>
+			</div>
+			<div class="podrobno__application">
+				<div class="podrobno__application-position">
+					<div class="podrobno__left-block">
+						<form 
+							class="podrobno__form-box"
+							method="POST"
+							action="index.php"
+							onchange="return Validate()">
+							<div class="podrobno__row-input" id="name_div">
+								<input 
+									type="text" 
+									class="name" 
+									name="phone" 
+									required="" 
+									placeholder="ФИО">
+							</div>
+							<div class="podrobno__row-input" id="email_div">
+								<input 
+									type="text" 
+									class="email" 
+									name="email" 
+									required="" 
+									placeholder="E-mail">
+							</div>
+							<div class="podrobno__row-select">
+								<select class="js-select-department select-style" style="width: 100%">
+									<option value="AL">Выберите департамент для обращения</option>
+									<option value="WY">Выберите департамент для обращения 1</option>
+									<option value="WY">Выберите департамент для обращения 2</option>
+									<option value="WY">Выберите департамент для обращения 3</option>
+								</select>
+							</div>
+							<div class="podrobno__row-select">
+								<select class="js-select-department select-style" style="width: 100%">
+									<option value="AL">Выберите тему для обращения</option>
+									<option value="WY">Выберите тему для обращения 1</option>
+									<option value="WY">Выберите тему для обращения 2</option>
+									<option value="WY">Выберите тему для обращения 3</option>
+								</select>
+							</div>
+							<div class="podrobno__row-textarea" id="textarea_div">
+								<textarea 
+									type="text" 
+									class="textarea" 
+									name="textarea" 
+									required="" 
+									placeholder="Ваше сообщение"></textarea>
+							</div>
+							<button class="podrobno__form-button" type="submit">
+								Отправить
+							</button>
+						</form>
+					</div>
+					<div class="podrobno__right-block">
+						<h2>
+							Оставте заявку
+						</h2>
+						<p>
+							Компания ГЛОСАВ признана победителем тендера на поставку и установку систем мониторинга транспорта с использованием оборудования ГЛОНАСС/GPS для филиала ОАО «Федеральная сетевая компания»(ФСК ЕЭС) «Магистральные электрические сети Центра»(МЭС Центра). Мониторинговое оборудование будет установлено на 890 транспортных средств в филиалах(ПМЭС) входящих В зону ответственности МЭС Центра: Валдайское, Верхне-Донское, Волго-Донское, Волго-Окское, Вологодское, Московское, Приокское и Черноземное.
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- End main -->
+	<!-- Start footer -->
+	{% include "partials/_footer.html" %}
+	<!-- End footer -->
+	</div>
+<!-- End podrobno page -->	
+{% endblock %}

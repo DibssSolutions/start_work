@@ -1,0 +1,428 @@
+.podrobno
+	background-color: $blue_middle
+	&__image
+		width: 100%
+		height: 0
+		padding-bottom: 30%
+		position: relative
+		background-color: $color_main_bg
+		background-size: cover
+		background-repeat: no-repeat
+	&__gradient
+		position: absolute
+		top: 0
+		width: 100%
+		height: 99%
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0.1) 100%)
+	&__title
+		display: flex
+		flex-direction: column
+		padding: 15px 115px
+		resize: both
+		position: relative
+		z-index: 2
+	&__main
+		margin-top: -4px
+		background-color: $color_white_blue
+	&__drop	
+		position: relative
+		top: -100px
+	&__content
+		padding: 0 115px 65px	
+		height: 265px
+		overflow: hidden
+		transition: height 0.3s
+	&__text
+		font-size: 14px
+		line-height: 22px
+		color: $blue_light
+		border-top: 3px solid $orange
+		background-color: $blue_middle
+		padding: 0 115px 65px
+		h2
+			margin: 45px 0
+			text-align: center
+		p
+			padding-bottom: 60px	
+	.open
+		transform: rotate(0deg)	
+	&__text-more
+		position: absolute
+		bottom: -30px
+		left: 50%
+		margin-left: -30px
+		background: none
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		background-color: $orange
+		transition: background 0.3s
+		transform: rotate(180deg)
+		&:hover
+			background-color: $blue
+	&__box-slider
+		position: relative
+		padding: 0 115px 80px
+		&.is-open
+
+			.slider-prevArrow,
+			.slider-nextArrow
+				display: none
+		.slick-list
+			height: 350px
+		.slider-prevArrow
+			top: 170px
+		.slider-nextArrow
+			top: 170px
+	&__slider
+		// height: 350px
+		text-align: center
+		.slide
+			vertical-align: top
+			padding: 35px 10px 0
+			max-width: 250px
+			max-height: 320px
+			a
+				font-weight: 500
+				margin-top: 35px
+				font-size: 18px
+				color: $blue
+				transition: color 0.3s
+			&:hover
+				a
+					color: $orange	
+			&-image
+				margin: 0 auto 25px
+				max-width: 235px
+				max-height: 235px
+				cursor: pointer 
+				img
+					width: 100%
+	&__btn-lodmore
+		display: block
+		max-width: 240px
+		background: none
+		margin: 35px auto 0
+		padding: 4px 15px
+		border: 1px solid $blue
+		border-radius: 15px
+		color: $blue
+		font-size: 14px
+		cursor: pointer
+		transition: color 0.3s, border 0.3s
+		&:hover
+			border: 1px solid $orange
+			color: $orange
+	&__brends
+		padding: 0 115px 65px
+	&__popup
+		display: none
+		position: relative
+		width: 420px  
+		height: 395px
+		border-radius: 10px 
+		background: $blue_middle
+		position: fixed
+		top: 50% 
+		left: 50%
+		transform: translate(-50%, -50%)
+		opacity: 0
+		z-index: 8
+		padding: 20px 10px
+		span
+			padding-left: 25px
+			font-size: 12px
+			color: $orange
+	&__popup-text
+		overflow: auto
+		max-height: 100px
+		padding: 10px 25px 25px
+		font-size: 12px
+		color: $blue_light
+		line-height: 22px
+		&::-webkit-scrollbar
+			width: 6px
+			background-color: #F5F5F5
+			border-radius: 3px
+		&::-webkit-scrollbar-thumb
+			background-color: #d0dbe2
+			border-radius: 3px
+	&__popup-close	
+		position: absolute
+		top: 15px
+		right: 15px
+	.icon-close
+		fill: $blue
+		cursor: pointer
+	&__popup-brend
+		position: relative
+		width: 230px
+		height: 70px
+		margin: 10px auto 5px
+		.icon-sberbank_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 43px
+		.icon-huawei_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 75px
+		.icon-gazprom_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 65px
+		.icon-dell_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 75px
+		.icon-alfabank_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 46px
+		.icon-google_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 35px
+		.icon-skb-bank_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 39px
+		.icon-apple_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 74px
+		.icon-mts_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 46px
+		.icon-intel_logo
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			font-size: 75px	
+	&__title-brend
+		text-align: center
+		margin-bottom: 40px
+	&__popup-overlay
+		z-index: 5 
+		position: fixed
+		background-color: rgba(46, 91, 114, 0.5) 
+		opacity: 0.8
+		-moz-opacity: 0.8
+		filter: alpha(opacity=80) 
+		width: 100%  
+		height: 100%
+		top: 0 
+		left: 0 
+		cursor: pointer 
+		display: none	
+	&__brends-container
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		.brend
+			margin: 30px 0 0
+			position: relative
+			width: 230px
+			height: 100px
+			.icon-sberbank_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 43px
+			.icon-huawei_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 75px
+			.icon-gazprom_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 65px
+			.icon-dell_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 75px
+			.icon-alfabank_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 46px
+			.icon-google_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 35px
+			.icon-skb-bank_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 39px
+			.icon-apple_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 74px
+			.icon-mts_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 46px
+			.icon-intel_logo
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 75px				
+	&__application
+		background-color: $blue_middle
+		border-top: 3px solid $orange
+	&__application-position	
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 0 115px
+	&__left-block
+		flex: 3 1 45%
+		margin: 45px 75px 45px 0
+		min-width: 400px
+	&__row-input
+		margin-top: 30px
+		width: 100%
+		input
+			font-size: 14px
+			height: 47px
+			width: 100%
+			padding: 0 20px
+			background: #cbd9e1
+			border-radius: 25px 
+			color: $blue_light
+		input::-webkit-input-placeholder
+			color: $blue_light
+		input:focus::-webkit-input-placeholder 
+			opacity: 0
+			transition:
+			opacity 0.3s ease
+	&__row-select
+		margin-top: 30px
+	&__row-textarea
+		margin-top: 30px	
+		textarea
+			font-size: 14px
+			border: none
+			height: 94px
+			width: 100%
+			padding: 10px 20px
+			background: #cbd9e1
+			border-radius: 25px 
+			color: $blue_light
+			resize: none
+			overflow: auto
+		textarea::-webkit-input-placeholder
+			color: $blue_light
+		textarea:focus::-webkit-input-placeholder
+			opacity: 0
+			transition:
+			opacity 0.3s ease
+	&__form-button
+		background: none
+		margin-top: 30px
+		padding: 12px 35px
+		border-radius: 20px
+		background-color: $orange
+		color: #fff
+		font-size: 14px
+		transition: background 0.3s
+		&:hover
+			background-color: $blue
+	&__right-block
+		flex: 1 1 45%
+		margin: 75px 0 45px
+		min-width: 400px
+		h2
+			margin-bottom: 35px
+		p
+			font-size: 14px
+			line-height: 22px
+			color: $blue_light
+.select2-dropdown
+	border: none
+	border-radius: 0 0 20px 20px
+	
+			
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	color: $blue_light
+	font-size: 14px
+.select2-container .select2-selection--single
+	height: 47px
+	border-radius: 25px 
+	padding: 10px 10px
+	border: none
+.select2-container--default .select2-selection--single
+	border: none
+	background-color: #cbd9e1
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	height: 47px
+	right: 15px
+	top: 50%
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	border: none
+	display: block
+	content: ''
+	background-image: url(../img/arrow-blue.png)
+	width: 13px
+	height: 8px
+	position: absolute
+	top: 0
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+	transform: rotate(180deg)	
+.select2-results
+	border-radius: 0 0 20px 20px
+	background-color: #cbd9e1
+	font-family: $gotham500
+	color: $blue_light
+	font-size: 14px
+.select2-results__option
+
+.select2-results__options
+	border: none
+	padding: 10px
+.select2-container--default .select2-results__option[aria-selected=true]	
+	background-color: inherit
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background-color: inherit
+	color: $blue
+.select2-selection__arrow b
+	border: none		

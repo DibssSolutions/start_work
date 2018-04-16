@@ -1,8 +1,33 @@
+@media screen and (max-width: 1200px)
+	
+	.products
+		.products-wrap
+			justify-content: center
+
 @media screen and (max-width: 1023px)
 	
 	//body
 	.pagewrap
 		width: 100%
+		height: 100%
+	.main__slider
+		height: auto
+	.main__slider__center
+		position: static
+		height: auto
+		transform: none
+	.slider__button
+		display: none
+	.slide__bg
+		filter: blur(0)
+	.main__slider
+		flex-direction: row
+		flex-wrap: wrap
+		// justify-content: space-between	
+	.slide
+		height: auto			
+	.slider__video__close
+		top: -40px
 
 	.title-step
 		display: none
@@ -42,28 +67,235 @@
 	.toggle__block
 		display: block
 
+	.header-mobile
+		display: block
 
-	//
+	.header__menu__item .active-menu-link
+		&::after
+			display: none
+	//header
 	
 	.header__navigation
 		display: none
+		z-index: 20
+
+	.active-mobile-menu
+		position: absolute
+		display: flex
+		align-items: flex-start
+		justify-content: flex-end
+		flex-direction: column-reverse
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 3
+		background-color: $blue
+		margin: 0
+		padding-top: 20px
+		height: 500px
+		.header__client
+			flex-direction: column
+			height: 40px
+			.header__login
+				color: #fff
+				margin-left: -210px
+				margin-top: -20px
+			.header__search
+				// display: block
+				top: -275px
+				left: 25px
+				.header__search-input
+					opacity: 1
+				.icon-search
+					fill: #fff
+			.header__length
+				margin-left: -230px	
+				a
+					color: #fff
+				ul
+					display: flex
+					align-items: center
+					justify-content: space-between
+					height: 15px
+					opacity: 1
+					background: inherit
+				&::after		
+					display: none
+				.click-link
+					display: none	
+	.header__menu
+		display: block
+		margin-top: 70px
+		.header__menu__item
+			margin: 0
+			height: 40px
+			width: 100%
+			.header__menu__link
+				color: #fff
+				padding: 10px 0 12px 25px
+				height: 100%
+				.header__menu__item:first-child
+					margin-top: 25px
 
 	.toggle-menu
-		display: block	
+		display: block
+	a(46,91,114,.0)
 	
+
+	//slider popup
+	.slider__popup__click
+		position: absolute
+		background-color: rgba(220,228,234, 1)
+	.slider__popup__close
+		left: 265px
+		top: 0
+	.backgr__image
+		.backgr__color
+			top: 270px
+			left: 0
+			width: 100%
+			background: rgba(220,228,234,0)
+			transform: translate(0,0)
+			span
+				margin: 0
+				text-align: left
+				width: 100%
+				font-size: 14px
+				color: $blue
+			.button__more__info
+				color: $blue
+				margin-left: 0
+				border: 1px solid $blue
+	.slider__border__image
+		position: relative
+		width: 270px
+		height: 280px
+		transform: translate(0,0)
+		top: 10px
+		left: 20px
+	.backgr__image
+		position: absolute
+		width: 220px
+		height: 220px
+		top: 40px
+		left: 60px
+		transform: translate(0,0)
+	.slider__popup__content
+		padding: 0 25px
+		position: static
+		display: flex
+		flex-direction: column
+		transform: translate(0,0)
+		width: 320px
+		height: 100%
+		margin: 0 auto
+		&::before
+			display: none
+		&::after
+			display: none	
+	.slider__block__leftup
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+		position: static
+		margin-top: 250px
+	.slider__border__leftup
+		width: 120px
+		height: 120px
+		margin-right: 15px
+		&::after
+			display: none
+	.slider__block__leftcenter		
+		position: static
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+	.slider__border__leftcenter
+		width: 120px
+		height: 120px
+		margin-right: 15px
+		&::after
+			display: none	
+	.slider__block__leftbottom
+		position: static
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+	.slider__border__leftbottom
+		width: 120px
+		height: 120px
+		margin-right: 15px	
+		&::after
+			display: none
+	.slider__block__righttop
+		position: static
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+	.slider__border__righttop
+		width: 120px
+		height: 120px
+		margin-right: 15px	
+		&::after
+			display: none
+	.slider__block__rightcenter
+		position: static
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+	.slider__border__rightcenter
+		width: 120px
+		height: 120px
+		margin-right: 15px	
+		&::after
+			display: none
+	.slider__block__rightbottom
+		position: static
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		flex-direction: row
+		width: 270px
+	.slider__border__rightbottom
+		width: 120px
+		height: 120px
+		margin-right: 15px										
+		&::before
+			display: none
 	//_contact
 	.contact__title
 		position: relative
+
 
 		
 	
 
 	//_promo
+	.promo
+		padding-top: 85px
+		&__gradient
+			top: -107px
+			background: none
+		&__title
+			margin-top: 130px	
+	.promo__block__first
+		padding-top: 150px
 	.promo__title__step
 		display: none
 
 	.promo__toggle__btn
 		display: block
+	
 
 	//_news
 	
@@ -117,4 +349,96 @@
 				padding-top: 8px	
 
 	.gradient
-		display: none		
+		display: none
+	
+	//text
+	.text__container
+		iframe
+			width: 100%
+
+	//napravlenie
+	.naprav__container
+		padding: 15px 55px 0
+		.naprav__monitoring
+			margin: 0 35px 65px 0
+		.naprav__its
+			margin: 0 35px 65px 0
+	
+	//company
+	.company__container
+		iframe
+			width: 100%
+
+	//vnedrenie
+	.vnedrenie-color
+		padding-top: 85px
+		.vnedrenie-bg__gradient
+			top: -107px
+			background: none
+			.vnedrenie__title
+				padding: 125px 70px 15px 25px
+				h5
+					font-size: 30px
+
+	.vnedrenie
+		flex-direction: column
+		padding-top: 255px
+		padding-right: 0	
+		&__left
+			top: 0
+			flex: 3 1 100%
+			margin: 0
+			padding: 0 25px
+		&__top
+			top: 140px
+			&::before
+				display: none
+		&__bottom
+			margin-top: 60px
+			padding: 0 25px		
+	.vnedrenie-slider
+		padding: 0 25px 40px
+		.slider-prevArrow
+			margin-left: -45px
+		.slider-nextArrow
+			margin-right: -45px				
+
+	//podrobno
+	.podrobno
+		padding-top: 85px
+		&__gradient
+			top: -107px
+			background: none
+		&__title
+			padding: 125px 70px 15px 25px
+			h5
+				font-size: 30px		
+		&__drop
+			top: 0
+			padding-top: 130px
+		&__content
+			padding: 0 0 65px
+		&__text
+			padding: 0 25px 65px
+		&__box-slider
+			margin-top: 65px
+			padding: 0 25px 80px
+			.slider-prevArrow
+				margin-left: -45px
+			.slider-nextArrow
+				margin-right: -45px
+		&__brends
+			padding: 0 25px 65px
+		&__application-position
+			padding: 0 25px
+		&__right-block
+			margin: 25px 0 45px				
+
+
+	//footer
+	
+	.footer
+		flex-wrap: wrap
+		.footer__adress
+			&:first-child
+				margin-left: 0

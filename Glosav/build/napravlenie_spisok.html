@@ -16,24 +16,29 @@
       <div class="header__color__bg">
         <!-- Start header -->
         <header class="header">
-          <div class="header__logo"> <a href="#" class="header__logo__link">
-			<img src="img/glosav-logo.png" alt="">
-		</a> </div>
+          <div class="header__logo"> <a href="#" class="header__logo-link">
+					<img src="img/glosav-logo.png" alt="">
+				</a> </div>
+          <!-- Start adaptive menu --><button class="toggle-menu">
+			        <span class="toggle"></span>
+			        <span class="toggle"></span>
+			        <span class="toggle"></span>
+				</button>
+          <!-- End adaptive menu -->
           <div class="header__navigation">
             <div class="header__client">
-              <div id="header__search" class="header__search">
-                <form action=""> <input class="search__input" placeholder="Search..." type="search" value="" name="" id="search_input"> <span class="search__icon" id="search">
-						
+              <div class="header__search">
+                <form action=""> <input class="header__search-input" placeholder="Search..." type="search" value="" name=""> <span class="header__search-icon">
+								
 <svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
 
-					</span> </form>
-                <div id="over_white"></div>
+							</span> </form>
               </div> <input class="header__login" id="open" type="submit" value="Войти">
               <div id="modal__form"> <span id="modal__close">
-					
+							
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
-				</span>
+						</span>
                 <form class="form__box" method="POST" action="index.php" onchange="return Validate()">
                   <h2 class="modal__title"> Вход в web-систему </h2>
                   <div class="info" id="name_div"> <input type="text" class="name" name="phone" required="" placeholder="Имя"> <span id="name_error"></span> </div>
@@ -43,7 +48,7 @@
                 </form>
               </div>
               <div id="overlay"></div>
-              <div class="header__length" name="" id="">
+              <div class="header__length"> <a class="click-link" href="#">Ru</a>
                 <ul>
                   <li><a href="#">Ru</a></li>
                   <li><a href="#">Ua</a></li>
@@ -53,85 +58,167 @@
             </div>
             <ul class="header__menu">
               <li class="header__menu__item"> <a href="#" class="header__menu__link">
-					о компании
-				</a> </li>
+							о компании
+						</a> </li>
+              <li class="header__menu__item"> <a href="#" class="header__menu__link active-menu-link">
+							напрвления
+						</a> </li>
               <li class="header__menu__item"> <a href="#" class="header__menu__link">
-					напрвления
-				</a> </li>
+							продукты
+						</a> </li>
               <li class="header__menu__item"> <a href="#" class="header__menu__link">
-					продукты
-				</a> </li>
+							новости
+						</a> </li>
               <li class="header__menu__item"> <a href="#" class="header__menu__link">
-					новости
-				</a> </li>
-              <li class="header__menu__item"> <a href="#" class="header__menu__link">
-					контакты
-				</a> </li>
+							контакты
+						</a> </li>
             </ul>
+            <div class="header-mobile">
+              <div class="header-mobile-logo"> <a href="#">
+							
+<svg class="icon icon-logo_mobile_menu"><use xlink:href="img/sprite.svg#icon-logo_mobile_menu"></use></svg>
+
+						</a> </div>
+              <div class="header-mobile-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+            </div>
           </div>
-          <!-- Start adaptive menu --><button class="toggle-menu">
-        <span class="toggle"></span>
-        <span class="toggle"></span>
-        <span class="toggle"></span>
-	</button>
-          <!-- End adaptive menu -->
         </header>
         <!-- End header -->
-      </div>
-      <!-- Start section napravlenie -->
-      <section>
-        <div class="naprav__container">
-          <div class="naprav__title">
-            <h5> Направления </h5>
-            <div class="bread-crams">
-              <div class="title-step">
-                <div class="dots-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                <div class="link-menu"> <a href="#" class="home">
+        <!-- Start section napravlenie -->
+        <section>
+          <div class="naprav__container">
+            <div class="naprav__title">
+              <h5> Направления </h5>
+              <div class="bread-crams">
+                <div class="title-step">
+                  <div class="dots-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="link-menu"> <a href="#" class="home">
 								Главная
 							</a> <span class="dots"></span> <span class="active-link">
 								Направления
 							</span> </div>
-              </div>
-              <div class="toggle__block"> <button class="toggle__btn" type="button">
+                </div>
+                <div class="toggle__block"> <button class="toggle__btn" type="button">
 			              <span class="toggle-dots"></span>
 			              <span class="toggle-dots"></span>
 			              <span class="toggle-dots"></span>
 			            </button> </div>
+              </div>
+            </div>
+            <div class="naprav__wrap">
+              <div class="naprav__monitoring"> <img src="img/carer.png" alt="car">
+                <h2> Мониторинг и тахография </h2>
+                <p> Специализированная система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал программного обеспечения позволяет
+                  обеспечивать. </p> <button type="button" class="param__btn__moreinfo">
+						Подробнее
+					</button>
+                <ul class="param__menu">
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Строительство
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Топливозаправщик
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Перевозки
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Дестрибуция
+							</a> </li>
+                </ul>
+              </div>
+              <div class="naprav__integration"> <img src="img/video-camera.png" alt="car">
+                <h2> Системная интеграция </h2>
+                <p> Специализированная система, предназначенная для использования на транспортных средствах, перевозящих ценности. Комплект оборудования включает бортовой блок, видеорегистратор, громкую связь, набор защищенных видеокамер, средства радиочастотной
+                  идентификации для определения </p> <button type="button" class="param__btn__moreinfo">
+						Подробнее
+					</button>
+                <ul class="param__menu">
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								ЖКХ
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Маркер
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Лизинг
+							</a> </li>
+                </ul>
+              </div>
+              <div class="naprav__its"> <img src="img/carer.png" alt="car">
+                <h2> ИТС </h2>
+                <p> Специализированное решение, предназначенное для использования на транспортных средствах, осуществляющих перевозку топлива. Комплект бортового оборудования включает бортовой блок, полностью соответствующий требованиям приказа Министерства
+                  транспорта РФ № 285 от 31.07.2012, </p> <button type="button" class="param__btn__moreinfo">
+						Подробнее
+					</button>
+                <ul class="param__menu">
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Перевозки
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Топливозаправщик
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Маркер
+							</a> </li>
+                </ul>
+              </div>
+              <div class="naprav__develop"> <img src="img/galactika.png" alt="car">
+                <h2> Разработка ПО </h2>
+                <p> Специализированная система, в состав которой входит расширенный набор бортового оборудования, обеспечивающий возможность контроля исполнительных механизмов специализированной техники. Расширенный функционал программного обеспечения позволяет
+                  обеспечивать соблюдение </p> <button type="button" class="param__btn__moreinfo">
+						Подробнее
+					</button>
+                <ul class="param__menu">
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Перевозки
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Топливозаправщик
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Маркер
+							</a> </li>
+                  <li class="param__menu__item"> <a href="#" class="param__menu__link">
+								Лизинг
+							</a> </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End section napravlenie -->
-      <!-- Start footer -->
-      <footer class="footer"> <a href="#">
-				<span class="footer__logo">
-					ООО "Глосав". Все права защищены
-				</span>
-			</a>
-        <div class="footer__contact"> <a href="#" class="footer__adress">
-					<span class="footer__icon">
-						
+        </section>
+        <!-- End section napravlenie -->
+        <!-- Start footer -->
+        <footer class="footer"> <a class="footer__OOO" href="#">
+		<span class="footer__logo">
+			ООО "Глосав". Все права защищены
+		</span>
+	</a>
+          <div class="footer__contact"> <a href="#" class="footer__adress">
+			<span class="footer__icon">
+				
 <svg class="icon icon-map"><use xlink:href="img/sprite.svg#icon-map"></use></svg>
 
-					</span>
-						Москва, Кожевнический проезд, д.1
-				</a> <a href="#" class="footer__adress">
-					<span class="footer__icon">
-						
+			</span>
+				Москва, Кожевнический проезд, д.1
+		</a> <a href="#" class="footer__adress">
+			<span class="footer__icon">
+				
 <svg class="icon icon-mail"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
 
-					</span>
-						commerce@glosav.ru
-				</a> <a href="#" class="footer__adress">
-					<span class="footer__icon">
-						
+			</span>
+				commerce@glosav.ru
+		</a> <a href="#" class="footer__adress">
+			<span class="footer__icon">
+				
 <svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
 
-					</span>
-						+7 (495) 644 33 59
-				</a> </div>
-      </footer>
-      <!-- End footer -->
+			</span>
+				+7 (495) 644 33 59
+		</a> </div>
+        </footer>
+        <!-- End footer -->
+      </div>
     </div>
     <!-- END content -->
     <script>

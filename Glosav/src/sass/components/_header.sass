@@ -6,122 +6,122 @@
 	min-height: 117px
 	&__logo
 		flex: 1 1 30%
-		&__link
-			display: block
-			max-width: 225px
-
-			margin-top: 15px
-			img
-				background-position: 50% 50%
-				background-size: cover
-				width: 100%	
-
-.header__navigation
-	display: flex
-	flex-direction: column
-	align-items: flex-end
-	justify-content: center
-	flex: 1 1 70%
-	height: 100%
-
-.header__client
-	display: flex
-	align-items: center
-	justify-content: space-between
-	width: 130px
-	position: relative
-	height: 31px
-
-.header__search
-	position: relative
-	top: -15px
-
-#search_input
-	position: absolute
-	display: block
-	display: none
-	right: 0
-	top: 0
-	color: $blue_white
-	font-size: 14px
-	font-family: inherit
-	height: 31px
-	width: 280px
-	background: $clor_bg
-	padding: 5px 25px 5px 16px
-	opacity: 0
-	z-index: 3
-	// tranthition: 0.3s
-
-#over_white 
-	z-index: 2  //пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa 
-	position: fixed  //всегдa перекрывaет весь сaйт 
-	background-color: #fff  //чернaя 
-	opacity: 0  //нo немнoгo прoзрaчнa 
-	-moz-opacity: 0  //фикс прозрачности для старых браузеров 
-	filter: alpha(opacity=80) 
-	width: 100%  
-	height: 100%  //рaзмерoм вo весь экрaн 
-	top: 0  //сверху и слевa 0, oбязaтельные свoйствa! 
-	left: 0 
-	cursor: pointer 
-	display: none  //в oбычнoм сoстoянии её нет)
-
-.icon-search
-	position: absolute
-	right: 8px
-	top: 6px
-	width: 16px
-	height: 19px
-	cursor: pointer
-	transition: 0.3s
-	fill: #56849d
-	z-index: 4
-	&:hover
-		fill: #ee9f32
-
-.header__login
-	position: absolute
-	top: 7px
-	left: 27px
-	font-size: 14px
-	color: #56849d
-	background: inherit
-	&:hover
-		color: #2c5b72
-
-.header__length
-	display: inline-block
-	position: absolute
-	top: 4px
-	right: 0
-	background: inherit
-	border: none
-	cursor: pointer
-	font-size: 14px
-	appearance: none
-	width: 40px
-	a
-		padding: 5px 15px 5px 10px
-		color: #56849d
-		font-weight: 400
-		transition: color 0.3s
-		&:hover
-			color: $orange
-	&:hover
-		&:after
-			border-color: $orange transparent transparent transparent
-	&:after
-		content: ''
-		width: 0
-		height: 0
-		border: 5px solid transparent
-		border-color: $blue_light transparent transparent transparent
+		margin-right: 35px
+	&__logo-link
+		display: block
+		max-width: 225px
+		margin-top: 15px
+		img
+			background-position: 50% 50%
+			background-size: cover
+			width: 100%	
+	&__navigation
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: flex-end
+		flex: 1 1 70%
+	&__client
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 30px
+	&__search
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		margin-right: 30px	
+	&__search-input
+		color: $blue_white
+		font-size: 14px
+		font-family: inherit
+		width: 270px
+		height: 29px
+		background: $clor_bg
+		padding: 5px 25px 5px 16px
+		opacity: 0
+		transition: opacity 0.3s
+	&__search-icon
 		position: absolute
-		top: 9px
-		right: 0
-		transition: border-color 0.3s
+		top: 50%
+		right: 5px
+		transform: translate(0, -50%)
+		.icon-search
+			width: 16px
+			height: 19px
+			cursor: pointer
+			transition: 0.3s
+			fill: #56849d
+			&:hover
+				fill: #ee9f32
+	&__login
+		font-size: 14px
+		color: #56849d
+		background: inherit
+		&:hover
+			color: #2c5b72
+	&__length
+		position: relative
+		background: inherit
+		border: none
+		cursor: pointer
+		font-size: 14px
+		appearance: none
+		width: 40px
+		top: 0px
+		margin-left: 15px
+		a
+			padding: 5px 15px 5px 10px
+			color: #56849d
+			font-weight: 400
+			transition: color 0.3s
+			&:hover
+				color: $orange
+		&:hover
+			&:after
+				border-color: $orange transparent transparent transparent
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border: 5px solid transparent
+			border-color: $blue_light transparent transparent transparent
+			position: absolute
+			top: 7px
+			right: 0
+			transition: border-color 0.3s
+		ul
+			position: absolute
+			top: 15px
+			background-color: $color_white_blue
+			opacity: 0
+			transition: opacity 0.3s
+			&.length-active
+				border-top: 1px dotted $blue
+				padding-top: 2px
+				opacity: 1
 
+	&__menu
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		width: 100%
+		margin-bottom: 5px
+		margin-top: 20px
+		&__item
+			margin-left: 20px
+		&__link
+			color: #56849d
+			font-size: 14px
+			font-weight: 600
+			text-transform: uppercase
+			transition: color 0.3s
+			letter-spacing: 1px
+			&:hover
+				color: $orange
+.search-active
+	opacity: 1
 
 .toggle-menu
 	display: none
@@ -141,20 +141,20 @@
 	&:last-child
 		margin-bottom: 0
 
-.header__menu
-	display: flex
-	align-items: center
-	justify-content: flex-end
-	width: 100%
-	margin-bottom: 5px
-	margin-top: 10px
-	&__item
-		margin-left: 20px
-	&__link
-		color: #56849d
-		font-size: 14px
-		font-weight: 600
-		text-transform: uppercase
-		transition: color 0.3s
-		&:hover
-			color: $orange
+.header-mobile
+	display: none
+	margin: 15px 25px 20px 20px	
+	.header-mobile-logo
+		width: 155px
+		height: 55px
+		.icon-logo_mobile_menu
+			width: 100%
+			height: 100%
+	.header-mobile-menu-close
+		position: absolute
+		top: 45px
+		right: 25px
+		font-size: 25px
+		cursor: pointer
+		.icon-close
+			fill: #fff

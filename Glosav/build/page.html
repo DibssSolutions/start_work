@@ -15,110 +15,113 @@
     <div class="out">
       <div class="pagewrap">
         <div class="header__color__bg">
-          <!-- Start header -->
-          <header class="header">
-            <div class="header__logo"> <a href="#" class="header__logo-link">
+          <div class="width-max">
+            <!-- Start header -->
+            <header class="header">
+              <div class="header__logo"> <a href="#" class="header__logo-link">
 			<img src="img/glosav-logo.png" alt="">
 		</a> </div>
-            <!-- Start adaptive menu --><button class="toggle-menu">
+              <!-- Start adaptive menu --><button class="toggle-menu">
 	        <span class="toggle"></span>
 	        <span class="toggle"></span>
 	        <span class="toggle"></span>
 		</button>
-            <!-- End adaptive menu -->
-            <div class="header__navigation">
-              <div class="header__client">
-                <div class="header__search">
-                  <form action=""> <input class="header__search-input" placeholder="Search..." type="search" value="" name=""> <span class="header__search-icon">
+              <!-- End adaptive menu -->
+              <div class="header__navigation">
+                <div class="header__client">
+                  <div class="header__search">
+                    <form action=""> <input class="header__search-input" placeholder="Search..." type="search" value="" name=""> <span class="header__search-icon">
 						
 <svg class="icon icon-search"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
 
 					</span> </form>
-                </div> <input class="header__login" id="open" type="submit" value="Войти">
-                <div id="modal__form"> <span id="modal__close">
+                  </div> <input class="header__login" id="open" type="submit" value="Войти">
+                  <div id="modal__form"> <span id="modal__close">
 					
 <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
 
 				</span>
-                  <form class="form__box" method="POST" action="index.php" onchange="return Validate()">
-                    <h2 class="modal__title"> Вход в web-систему </h2>
-                    <div class="info" id="name_div"> <input type="text" class="name" name="phone" required="" placeholder="Имя"> <span id="name_error">*Не верно введены данные. Пожалуйста проверте написание</span> </div>
-                    <div class="info" id="email_div"> <input type="text" class="email" name="email" required="" placeholder="Почта"> <span id="email_error">
+                    <form class="form__box" method="POST" action="index.php" onchange="return Validate()">
+                      <h2 class="modal__title"> Вход в web-систему </h2>
+                      <div class="info" id="name_div"> <input type="text" class="name" name="phone" required="" placeholder="Имя"> <span id="name_error">*Не верно введены данные. Пожалуйста проверте написание</span> </div>
+                      <div class="info" id="email_div"> <input type="text" class="email" name="email" required="" placeholder="Почта"> <span id="email_error">
 							*Не верно введены данные
 						</span> </div>
-                    <div class="info" id="password_div"> <input type="password" class="password" name="password" required="" placeholder="Пароль"> <span id="password_error"></span> </div>
-                    <div class="form__buttons"> <input class="button-login" type="submit" name="" value="Войти"> </div>
-                  </form>
+                      <div class="info" id="password_div"> <input type="password" class="password" name="password" required="" placeholder="Пароль"> <span id="password_error"></span> </div>
+                      <div class="form__buttons"> <input class="button-login" type="submit" name="" value="Войти"> </div>
+                    </form>
+                  </div>
+                  <div id="overlay"></div>
+                  <div class="header__length"> <a class="click-link" href="#">Ru</a>
+                    <ul>
+                      <li><a href="#">Ru</a></li>
+                      <li><a href="#">Ua</a></li>
+                      <li><a href="#">En</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div id="overlay"></div>
-                <div class="header__length"> <a class="click-link" href="#">Ru</a>
-                  <ul>
-                    <li><a href="#">Ru</a></li>
-                    <li><a href="#">Ua</a></li>
-                    <li><a href="#">En</a></li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="header__menu">
-                <li class="header__menu__item"> <a href="#" class="header__menu__link">
+                <ul class="header__menu">
+                  <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					о компании
 				</a> </li>
-                <li class="header__menu__item"> <a href="#" class="header__menu__link">
+                  <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					напрвления
 				</a> </li>
-                <li class="header__menu__item"> <a href="#" class="header__menu__link">
+                  <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					продукты
 				</a> </li>
-                <li class="header__menu__item"> <a href="#" class="header__menu__link">
+                  <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					новости
 				</a> </li>
-                <li class="header__menu__item"> <a href="#" class="header__menu__link">
+                  <li class="header__menu__item"> <a href="#" class="header__menu__link">
 					контакты
 				</a> </li>
-              </ul>
-              <div class="header-mobile">
-                <div class="header-mobile-logo"> <a href="#">
+                </ul>
+                <div class="header-mobile">
+                  <div class="header-mobile-logo"> <a href="#">
 					
 <svg class="icon icon-logo_mobile_menu"><use xlink:href="img/sprite.svg#icon-logo_mobile_menu"></use></svg>
 
 				</a> </div>
-                <div class="header-mobile-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="header-mobile-menu-close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                </div>
               </div>
-            </div>
-          </header>
-          <!-- End header -->
+            </header>
+            <!-- End header -->
+          </div>
         </div>
         <main class="main">
-          <!-- Start slider -->
-          <!-- Start slider -->
-          <div class="main__slider__center">
-            <!-- Start slider video -->
-            <div class="slider__video__wrap">
-              <div class="slider__video"> <iframe class="js-if" width="1280" height="435" src="" frameborder="0" allowfullscreen></iframe>
-                <div class="slider__video__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="width-max">
+            <!-- Start slider -->
+            <!-- Start slider -->
+            <div class="main__slider__center">
+              <!-- Start slider video -->
+              <div class="slider__video__wrap">
+                <div class="slider__video"> <iframe class="js-if" width="1280" height="435" src="" frameborder="0" allowfullscreen></iframe>
+                  <div class="slider__video__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                </div>
               </div>
-            </div>
-            <!-- Start slider video -->
-            <!-- Start slider video button-->
-            <div class="slider__button"> <span class="button__inform">
+              <!-- Start slider video -->
+              <!-- Start slider video button-->
+              <div class="slider__button"> <span class="button__inform">
 				Потяните
 			</span>
-              <div id="polzun" class="slider__button__left">
-                <div class="button__block1"></div>
-              </div>
-              <div class="slider__button__right">
-                <div class="button__block2"></div> <span class="button__inform">
+                <div id="polzun" class="slider__button__left">
+                  <div class="button__block1"></div>
+                </div>
+                <div class="slider__button__right">
+                  <div class="button__block2"></div> <span class="button__inform">
 				для просмотра
 			</span> </div>
-            </div>
-            <!-- End slider video button-->
-            <!-- Start popup slider click -->
-            <div class="slider__popup__click popup-click-system">
-              <div class="slider__popup__content">
-                <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
-                <div class="backgr__image" style="background-image: url(img/gettyImages.png);">
-                  <div class="backgr__color"> <span>
+              </div>
+              <!-- End slider video button-->
+              <!-- Start popup slider click -->
+              <div class="slider__popup__click popup-click-system">
+                <div class="slider__popup__content">
+                  <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
+                  <div class="backgr__image" style="background-image: url(img/gettyImages.png);">
+                    <div class="backgr__color"> <span>
 						Система для компаний,
 						занимающихся дистрибуцией.
 						Может быть использована
@@ -133,40 +136,40 @@
 					</span> <button class="button__more__info" type="button">
 						Подробнее
 					</button> </div>
+                  </div>
+                  <div class="slider__block__leftup">
+                    <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__leftcenter">
+                    <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__leftbottom">
+                    <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
+                  <div class="slider__block__righttop">
+                    <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__rightcenter">
+                    <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__rightbottom">
+                    <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
                 </div>
-                <div class="slider__block__leftup">
-                  <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__leftcenter">
-                  <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__leftbottom">
-                  <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
-                <div class="slider__block__righttop">
-                  <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__rightcenter">
-                  <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__rightbottom">
-                  <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
               </div>
-            </div>
-            <!-- End popup slider click -->
-            <!-- Start popup slider click -->
-            <div class="slider__popup__click popup-click-develop">
-              <div class="slider__popup__content">
-                <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
-                <div class="backgr__image" style="background-image: url(img/html.png" ); ">
+              <!-- End popup slider click -->
+              <!-- Start popup slider click -->
+              <div class="slider__popup__click popup-click-develop">
+                <div class="slider__popup__content">
+                  <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
+                  <div class="backgr__image" style="background-image: url(img/html.png" ); ">
 				<div class="backgr__color ">
 					<span>
 						Система для компаний,
@@ -331,7 +334,7 @@
 				<img src="img/vector-object400.png " alt="border ">
 			</div>
 			<div class="backgr__image " style="background-image: url(img/html.png ");">
-                  <div class="backgr__color"> <span>
+                    <div class="backgr__color"> <span>
 						Система для компаний,
 						занимающихся дистрибуцией.
 						Может быть использована
@@ -346,41 +349,41 @@
 					</span> <button class="button__more__info" type="button">
 						Подробнее
 					</button> </div>
+                  </div>
+                  <div class="slider__block__leftup">
+                    <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__leftcenter">
+                    <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__leftbottom">
+                    <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
+                  <div class="slider__block__righttop">
+                    <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__rightcenter">
+                    <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__rightbottom">
+                    <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
                 </div>
-                <div class="slider__block__leftup">
-                  <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__leftcenter">
-                  <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__leftbottom">
-                  <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
-                <div class="slider__block__righttop">
-                  <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__rightcenter">
-                  <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__rightbottom">
-                  <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
               </div>
-            </div>
-            <!-- End popup slider click -->
-            <!-- Start popup slider click -->
-            <div class="slider__popup__click popup-click-technology">
-              <div class="slider__popup__content">
-                <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
-                <div class="backgr__image" style="background-image: url(img/gettyImages.png);">
-                  <div class="backgr__color"> <span>
+              <!-- End popup slider click -->
+              <!-- Start popup slider click -->
+              <div class="slider__popup__click popup-click-technology">
+                <div class="slider__popup__content">
+                  <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
+                  <div class="backgr__image" style="background-image: url(img/gettyImages.png);">
+                    <div class="backgr__color"> <span>
 						Система для компаний,
 						занимающихся дистрибуцией.
 						Может быть использована
@@ -395,40 +398,40 @@
 					</span> <button class="button__more__info" type="button">
 						Подробнее
 					</button> </div>
+                  </div>
+                  <div class="slider__block__leftup">
+                    <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__leftcenter">
+                    <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__leftbottom">
+                    <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
+                  <div class="slider__block__righttop">
+                    <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
+					поставка
+				</a> </div>
+                  <div class="slider__block__rightcenter">
+                    <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
+					монтаж
+				</a> </div>
+                  <div class="slider__block__rightbottom">
+                    <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
+					пусконаладка
+				</a> </div>
                 </div>
-                <div class="slider__block__leftup">
-                  <div class="slider__border__leftup"> <img src="img/Layer21.png" alt="left-up"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__leftcenter">
-                  <div class="slider__border__leftcenter"> <img src="img/layer22.png" alt="leftcenter"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__leftbottom">
-                  <div class="slider__border__leftbottom"> <img src="img/Layer23.png" alt="left-bottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
-                <div class="slider__block__righttop">
-                  <div class="slider__border__righttop"> <img src="img/layer21copy.png" alt="right-top"> </div> <a href="#" class="title__image">
-					поставка
-				</a> </div>
-                <div class="slider__block__rightcenter">
-                  <div class="slider__border__rightcenter"> <img src="img/layer22copy.png" alt="right-center"> </div> <a href="#" class="title__image">
-					монтаж
-				</a> </div>
-                <div class="slider__block__rightbottom">
-                  <div class="slider__border__rightbottom"> <img src="img/layer23copy.png" alt="rightbottom"> </div> <a href="#" class="title__image">
-					пусконаладка
-				</a> </div>
               </div>
-            </div>
-            <!-- End popup slider click -->
-            <!-- Start popup slider click -->
-            <div class="slider__popup__click popup-click-tourism">
-              <div class="slider__popup__content">
-                <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
-                <div class="backgr__image" style="background-image: url(img/html.png" ); ">
+              <!-- End popup slider click -->
+              <!-- Start popup slider click -->
+              <div class="slider__popup__click popup-click-tourism">
+                <div class="slider__popup__content">
+                  <div class="slider__popup__close"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                  <div class="slider__border__image"> <img src="img/vector-object400.png" alt="border"> </div>
+                  <div class="backgr__image" style="background-image: url(img/html.png" ); ">
 				<div class="backgr__color ">
 					<span>
 						Система для компаний,
@@ -563,15 +566,19 @@
 	</div>
 </div>
 <!-- End slider -->
-		<!-- End slider -->	
+			<!-- End slider -->
+		</div>
 	</main>
-	<!-- Start footer -->
-	<footer class="footer ">
-	<a class="footer__OOO " href="# " >
-		<span class="footer__logo ">
-			ООО "Глосав ". Все права защищены
-		</span>
-	</a>
+	
+		<!-- Start footer -->
+		<footer class="footer width-max ">
+	<div class="footer__OOO ">
+		<a href="# " >
+			<span class="footer__logo ">
+				ООО "Глосав ". Все права защищены
+			</span>
+		</a>
+	</div>
 	<div class="footer__contact ">
 		<a href="# " class="footer__adress ">
 			<span class="footer__icon ">
@@ -599,7 +606,7 @@
 		</a>
 	</div>
 </footer>
-	<!-- End footer -->
+		<!-- End footer -->
 </div>	
 
     </div>

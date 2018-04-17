@@ -6,17 +6,22 @@ title: Index page
 {% block content %}
 <div class="pagewrap">
 	<div class="header__color__bg">
-		<!-- Start header -->
-		{% include "partials/_header.html" %}
-		<!-- End header -->
+		<div class="width-max">
+			<!-- Start header -->
+			{% include "partials/_header.html" %}
+			<!-- End header -->
+		</div>
 	</div>
 	<main class="main">
-		<!-- Start slider -->
-		{% include "partials/_sliders.html"%}
-		<!-- End slider -->	
+		<div class="width-max">
+			<!-- Start slider -->
+			{% include "partials/_sliders.html"%}
+			<!-- End slider -->
+		</div>
 	</main>
-	<!-- Start footer -->
-	{% include "partials/_footer.html" %}
-	<!-- End footer -->
+	
+		<!-- Start footer -->
+		{% include "partials/_footer.html" %}
+		<!-- End footer -->
 </div>	
 {% endblock %}

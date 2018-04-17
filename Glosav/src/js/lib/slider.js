@@ -1,21 +1,38 @@
 import slick from 'slick-carousel';
 
-$('.main__slider').slick({
-  centerMode: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
-  draggable: true,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 1023,
-      settings: 'unslick'
+var slider = $('.main__slider');
+function initSlider() {
+  if ($(window).width() >= 1023) {
+    if (!slider.hasClass('slick-initialized')) {
+
+      slider.slick({
+        centerMode: true,
+        slidesToShow: 3,
+        slideToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        prevArrow: false,
+        nextArrow: false,
+      });
     }
-  ]
+  } else {
+    if(slider.hasClass('slick-initialized')) {
+      
+      slider.slick('unslick');
+    }
+  }
+}
+initSlider();
+
+var time_out;  
+
+$(window).on('resize', function() {
+  clearTimeout(time_out);
+  time_out = setTimeout(function() {
+    initSlider();
+  }, 300);
+  
 });
-
-
 
 
 //napravlenie podrobno

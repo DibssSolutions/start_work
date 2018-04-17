@@ -21,6 +21,11 @@
 	.slide__bg
 		filter: blur(0)
 	.main__slider
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
 		flex-direction: row
 		flex-wrap: wrap
 		// justify-content: space-between	
@@ -107,7 +112,7 @@
 				.header__search-input
 					opacity: 1
 				.icon-search
-					fill: #fff
+					fill: $blue
 			.header__length
 				margin-left: -230px	
 				a
@@ -143,8 +148,13 @@
 	
 
 	//slider popup
+	.main__slider
+		opacity: 1
+		visibility: visible
 	.slider__popup__click
 		position: absolute
+		top: 0
+		transform: translate(-50%, 0)
 		background-color: rgba(220,228,234, 1)
 	.slider__popup__close
 		left: 265px

@@ -1,9 +1,7 @@
-.main
-	position: relative
 .main__slider__center
 	position: absolute
 	width: 100%
-	height: 570px
+	height: calc(100vh-177px)
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -45%)
@@ -65,20 +63,17 @@
 	height: 40px
 	margin: 0 auto
 
-.slider__button__left
-	display: flex
-	align-items: center
-	justify-content: space-between
-
 .noUi-horizontal .noUi-handle
 	position: relative
 	width: 38px
 	height: 38px
-	margin-top: -13px
+	margin-top: -14px
+	margin-left: 80px
 	border-radius: 50%
 	border: 1px solid $blue
 	background-color: $clor_bg
 	cursor: pointer
+	z-index: 2
 	&::after
 		position: absolute
 		display: block
@@ -96,8 +91,6 @@
 .noUi-target
 	width: 115px 
 	border: 1px dotted $blue
-.noUi-connect, .noUi-origin
-	left: 20px
 .button__block1
 	height: 2px
 	width: 80px
@@ -128,7 +121,6 @@
 		top: 50%
 		left: 50%
 		transform: translate(-50%, -50%)
-		z-index: 2
 
 
 .button__inform
@@ -141,7 +133,7 @@
 	position: fixed
 	display: none
 	width: 100%
-	height: 100%
+	height: auto
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
@@ -538,11 +530,16 @@
 	justify-content: center
 	height: 530px
 	position: relative
-
+	opacity: 0
+	visibility: hidden
+	&.slick-initialized
+		opacity: 1
+		visibility: visible
 
 .slide
 	display: inline-block
 	height: 530px
+	+gpu
 	&:hover
 		.slide__direction
 			color: #ee9f32
